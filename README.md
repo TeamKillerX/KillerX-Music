@@ -87,11 +87,11 @@ Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
 Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip
 Rendy@Ubuntu~ $ sudo systemctl start docker
 Rendy@Ubuntu~ $ sudo systemctl enable docker
-Rendy@Ubuntu~ $ git clone https://github.com/Randi356/KillerX-Music
+Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
 Rendy@Ubuntu~ $ cd KillerX-Music
 Rendy@Ubuntu~ $ cp sample.env .env
 Rendy@Ubuntu~ $ nano .env
-# config vars [ ctrl s + x ] # https://github.com/Randi356/KillerX-Music/blob/Master/sample.env
+# config vars [ ctrl s + x ] # https://github.com/TeamKillerX/KillerX-Music/blob/dev/sample.env
 Rendy@Ubuntu~ $ screen -S killerx
 Rendy@Ubuntu~ $ docker build -t killerx-music .
 Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
@@ -108,7 +108,7 @@ Rendy@Ubuntu~ $ bash start
 # SESSION STRING VIA VPS 
 ```console
 Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
-Rendy@Ubuntu~ $ git clone https://github.com/Randi356/KillerX-Music && cd KillerX-Music
+Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
 Rendy@Ubuntu~ $ python3 genstring.py
 
 # API_ID # my.telegram.org
@@ -132,6 +132,6 @@ Links : github.com/TeamYukki/YukkiMusicBot
 ```
 # Credits
 
-* • [x] dev [Shikar](https://t.me/TeamYukki) YukkiMusicBot
-* • [x] coding [Rendy](https://t.me/FFmpegNotInstalled) KillerX-Music
+* [X] dev [Shikar](https://t.me/TeamYukki) YukkiMusicBot
+* [X] coding [Rendy](https://t.me/FFmpegNotInstalled) KillerX-Music
 
