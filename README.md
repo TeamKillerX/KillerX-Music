@@ -93,8 +93,9 @@ Rendy@Ubuntu~ $ cp sample.env .env
 Rendy@Ubuntu~ $ nano .env
 # config vars [ ctrl s + x ] # https://github.com/TeamKillerX/KillerX-Music/blob/dev/sample.env
 Rendy@Ubuntu~ $ screen -S killerx
-Rendy@Ubuntu~ $ docker build -t killerx-music .
-Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
+Rendy@Ubuntu~ $ sudo docker build -t killerx-music .
+Rendy@Ubuntu- $ sudo docker run killerx-music
+Rendy@Ubuntu~ $ sudo docker run -v $(pwd)data:/app/data --rm -itd killerx-music
 
 # Final Run KillerX Music
 
