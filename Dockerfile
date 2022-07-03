@@ -7,6 +7,7 @@ RUN apt-get update -y && apt-get upgrade -y \
 RUN git clone -b dev https://github.com/TeamKillerX/KillerX-Music/
 COPY . /app/
 WORKDIR /app/
+WORKDIR "/root/TeamKillerX"
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install --ignore-installed PyYAML 
