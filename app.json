@@ -1,4 +1,4 @@
-{
+IP{
     "name": "KillerX Music Bot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "",
@@ -65,6 +65,11 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "You create a channel group.",
         "value": "",
         "required": true
       }
