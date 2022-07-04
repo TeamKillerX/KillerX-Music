@@ -38,6 +38,11 @@
         "value": "",
         "required": true
       },
+      "BOT_USERNAME": {
+        "description": "botfather without @",
+        "value": "",
+        "required": true
+      },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
         "value": "",
