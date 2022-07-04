@@ -67,6 +67,11 @@
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
         "required": true
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "You create a channel group.",
+        "value": "",
+        "required": true
       }
     },
     "buildpacks": [
