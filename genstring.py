@@ -1,5 +1,5 @@
 # credit @TeamYukki
-# by @ffmpegnotindtalled
+# by @FFmpegNotInstalled
 
 
 import asyncio
