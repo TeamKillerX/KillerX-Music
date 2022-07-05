@@ -53,7 +53,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["PL_B_12"], switch_inline_query_current_chat=""
             ),
         ],
         [  
@@ -127,7 +127,7 @@ def stream_markup(_, videoid):
                 text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["PL_B_12"], switch_inline_query_current_chat=""
             ),
         ],
         [
@@ -155,7 +155,7 @@ def telegram_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["PL_B_12"], switch_inline_query_current_chat=""
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
