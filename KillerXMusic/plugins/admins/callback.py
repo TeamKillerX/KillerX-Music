@@ -7,7 +7,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from KillerXMusic import YouTube, app
-from KillerXMusic.core.call import KillerXMusic
+from KillerXMusic.core.call import KillerX
 from KillerXMusic.misc import SUDOERS, db
 from KillerXMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
@@ -139,7 +139,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await KillerXMusic.pause_stream(chat_id)
+        await KillerX.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention)
         )
@@ -150,13 +150,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await KillerXMusic.resume_stream(chat_id)
+        await KillerX.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await KillerXMusic.stop_stream(chat_id)
+        await KillerX.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_9"].format(mention)
@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_on(chat_id)
-        await KillerXMusic.mute_stream(chat_id)
+        await KillerX.mute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_6"].format(mention)
         )
@@ -179,7 +179,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_off(chat_id)
-        await KillerXMusic.unmute_stream(chat_id)
+        await KillerX.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_8"].format(mention)
         )
@@ -230,7 +230,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention)
                 )
                 try:
-                    return await KillerXMusic.stop_stream(chat_id)
+                    return await KillerX.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -241,7 +241,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
                 )
-                return await KillerXMusic.stop_stream(chat_id)
+                return await KillerX.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await KillerXMusic.skip_stream(chat_id, link, video=status)
+                await KillerX.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_9"])
             try:
-                await KillerXMusic.skip_stream(
+                await KillerX.skip_stream(
                     chat_id, file_path, video=status
                 )
             except Exception:
@@ -312,7 +312,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await KillerXMusic.skip_stream(
+                await KillerX.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
@@ -330,7 +330,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await KillerXMusic.skip_stream(chat_id, queued, video=status)
+                await KillerX.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -425,7 +425,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await KillerXMusic.seek_stream(
+            await KillerX.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
