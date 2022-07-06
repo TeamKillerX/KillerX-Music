@@ -10,7 +10,8 @@
 import random
 
 from pyrogram.types import InlineKeyboardButton
-from config import SUPPORT_CHANNEL, BOT_USERNAME
+from config import SUPPORT_CHANNEL
+
 selections = [
     "▮▮▮▮▮▮▮▮",
     "▮▮▮▮▮▮▮▯",
@@ -44,8 +45,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -72,9 +72,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+            ),
+            InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -90,8 +95,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -111,9 +115,14 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+            ),
+            InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
