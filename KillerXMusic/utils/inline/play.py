@@ -10,7 +10,8 @@
 import random
 
 from pyrogram.types import InlineKeyboardButton
-from config import SUPPORT_CHANNEL, BOT_USERNAME
+from config import SUPPORT_CHANNEL
+
 selections = [
     "▮▮▮▮▮▮▮▮",
     "▮▮▮▮▮▮▮▯",
@@ -30,6 +31,9 @@ selections = [
 ]
 
 
+## After Edits with Timer Bar
+
+
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
     buttons = [
@@ -41,7 +45,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_5"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -49,17 +53,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_12"], switch_inline_query_current_chat=""
-            ),
-        ],
-        [  
-            InlineKeyboardButton(
-                text=_["S_B_6"], url=f"https://github.com/Randi356/KillerX-Music",
-            ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
@@ -79,6 +72,9 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+            ),
+            InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
@@ -90,6 +86,52 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
     ]
     return buttons
+
+
+## Inline without Timer Bar
+
+
+def stream_markup(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
+    ]
+    return buttons
+
+
+def telegram_markup(_, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            ),
+        ],
+    ]
+    return buttons
+
+
+## Search Query Inline
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -109,57 +151,6 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
-        ],
-    ]
-    return buttons
-
-
-def stream_markup(_, videoid):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_12"], switch_inline_query_current_chat=""
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_5"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_6"], url=f"https://github.com/Randi356/KillerX-Music",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
-        ],
-    ]
-    return buttons
-
-
-def telegram_markup(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_12"], switch_inline_query_current_chat=""
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            ),
         ],
     ]
     return buttons
@@ -187,6 +178,9 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     return buttons
 
 
+## Live Stream Markup
+
+
 def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
         [
@@ -195,12 +189,15 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
                 callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
     ]
     return buttons
+
+
+## Slider Query Markup
 
 
 def slider_markup(
@@ -220,7 +217,7 @@ def slider_markup(
         ],
         [
             InlineKeyboardButton(
-                text="⋞",
+                text="❮",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
@@ -228,12 +225,16 @@ def slider_markup(
                 callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="⋟",
+                text="❯",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
         ],
     ]
     return buttons
+
+
+## Cpanel Markup
+
 
 def panel_markup_1(_, videoid, chat_id):
     buttons = [
