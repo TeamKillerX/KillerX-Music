@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo "
+            
+╭╮╭━╮╭╮╭╮╱╱╱╱╭━╮╭━┳━╮╭━╮
+┃┃┃╭╯┃┃┃┃╱╱╱╱╰╮╰╯╭┫┃╰╯┃┃
+┃╰╯╯╭┫┃┃┃╭━━┳━╋╮╭╯┃╭╮╭╮┣╮╭┳━━┳┳━━╮
+┃╭╮┃┣┫┃┃┃┃┃━┫╭╋╯╰╮┃┃┃┃┃┃┃┃┃━━╋┫╭━╯
+┃┃┃╰┫┃╰┫╰┫┃━┫┣╯╭╮╰┫┃┃┃┃┃╰╯┣━━┃┃╰━╮
+╰╯╰━┻┻━┻━┻━━┻┻━╯╰━┻╯╰╯╰┻━━┻━━┻┻━━╯
+
+      Visit @RendyProjects for updates!!
+
+"
+if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
+if [ $STRING_SESSION ] ; then wget https://raw.githubusercontent.com/TeamKillerX/pyKillerX/main/main.py && python3 main.py; else python3 -m KillerXMusic ; fi
