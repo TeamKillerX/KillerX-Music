@@ -146,4 +146,4 @@ Links : github.com/TeamYukki/YukkiMusicBot
 
 * [X] dev [Shikar](https://t.me/TeamYukki) YukkiMusicBot
 * [X] coding [Rendy](https://t.me/FFmpegNotInstalled) KillerX-Music
-
+* [X] dev [TeamUltroid](https://github.com/TeamUltroid) Ultroid
