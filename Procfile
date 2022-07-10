@@ -1,1 +1,1 @@
-worker: python3 -m KillerXMusic
+worker: bash startup
