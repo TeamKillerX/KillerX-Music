@@ -69,8 +69,14 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/L9pSIF?referralCode=vZzsp6)
 
 ## 🌸 Deploy to github workflows
-[![Deploy To Workflows](https://img.shields.io/badge/Deploy&Workflows-1b77FF.svg?style=for-the-badge&logo=workflows)](https://github.com/TeamKillerX/Music-workflows/fork)
-
+[![Deploy To Workflows](https://img.shields.io/badge/Deploy&Workflows-1b77FF.svg?style=for-the-badge&logo=workflows)](https://github.com/TeamKillerX/Music-workflows)
+* SECRETS
+```
+CREDS
+GitHubName = Your GitHub username
+GitHubMail = Your GitHub E-mail
+GH_TOKEN
+```
 # SCREENSHOT 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
 
