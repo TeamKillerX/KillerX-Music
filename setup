@@ -76,7 +76,7 @@ node(){
 repo(){
 	# Get git repo if the installer is runned standalone
 	[[ ! "KillerX-Music" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/Randi356/KillerX-Music &&  cd KillerX-Music
+	git clone https://github.com/TeamKillerX/KillerX-Music &&  cd KillerX-Music
 }
 
 
@@ -111,7 +111,6 @@ pprint "\nEnter Your Values Below\n\n\n"
 pprint "API ID: "; color_reset; read api_id
 pprint "\nAPI HASH: "; color_reset; read api_hash
 pprint "\nBOT TOKEN: "; color_reset; read bot_token
-pprint "\nMONGO DB URI: "; color_reset; read mongo_db
 pprint "\nLOG GROUP ID: "; color_reset; read logger
 pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read string_session
 pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
@@ -126,7 +125,6 @@ fi
 echo """API_ID = $api_id
 API_HASH = $api_hash
 BOT_TOKEN = $bot_token
-MONGO_DB_URI = $mongo_db
 LOG_GROUP_ID = $logger
 MUSIC_BOT_NAME = $mbt
 STRING_SESSION = $string_session
