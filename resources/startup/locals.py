@@ -119,7 +119,7 @@ def check_for_py():
 
 def gen_session():
     print("\nProcessing...")
-    os.system("python3 resources/session/genstring.py")
+    os.system("python3 genstring.py")
 
 
 start()
