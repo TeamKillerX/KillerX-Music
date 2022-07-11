@@ -11,5 +11,4 @@ WORKDIR /app/
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install --ignore-installed PyYAML 
-RUN python3 -m pip install -U -r https://raw.githubusercontent.com/Randi356/KillerX-Music/dev/requirements.txt
 CMD [ "bash", "startup" ]
