@@ -52,7 +52,8 @@ def start():
         "UPSTREAM_BRANCH",
         "AUTO_LEAVING_ASSISTANT", 
         "BOT_TOKEN", 
-        "MUSIC_BOT_NAME", 
+        "MUSIC_BOT_NAME",
+        "MONGO_DB_URI",
     ]
     all_done = "# KillerXMusic Environment Variables.\n# Do not delete this file.\n\n"
     for i in varrs:
