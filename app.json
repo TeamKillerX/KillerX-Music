@@ -68,6 +68,11 @@
         "value": "",
         "required": true
       },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "value": "",
+        "required": true
+      },
       "SUPPORT_CHANNEL": {
         "description": "You create a channel group.",
         "value": "",
