@@ -6,8 +6,10 @@
 ![Stars](https://img.shields.io/github/stars/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Contributors](https://img.shields.io/github/contributors/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Repository Size](https://img.shields.io/github/repo-size/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)</br>
-[![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/music)](https://hub.docker.com/r/rendyprojects/music/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/killerx-music)](https://hub.docker.com/r/rendyprojects/killerx-music/tags)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/KillerX-Music?&style=plastic&logo=github)](https://github.com/Randi356/KillerX-Music/graphs/commit-activity)
+
+![back](https://user-images.githubusercontent.com/90479255/178405323-34f4af0b-5c1e-4822-b0d6-eb578e30ff54.png)
 ```
 ️                       ⚠️ WARNING FOR YOU ️ ️⚠️
    KillerX-Music is used to help your account activities on Telegram
