@@ -74,8 +74,8 @@
         "required": true
       },
       "SUPPORT_CHANNEL": {
-        "description": "You create a channel group.",
-        "value": "",
+        "description": "You create a channel group or skip.",
+        "value": "https://t.me/RendyProjects",
         "required": true
       }
     },
