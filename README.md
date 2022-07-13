@@ -1,11 +1,11 @@
 # CodeX By Python
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6100/badge)](https://bestpractices.coreinfrastructure.org/projects/6100)
 ![Python Version](https://img.shields.io/badge/python-3.9-green?style=for-the-badge&logo=appveyor)
-![Issues](https://img.shields.io/github/issues/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
-![Forks](https://img.shields.io/github/forks/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
+![Issues](https://img.shields.io/github/issues/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
+![Forks](https://img.shields.io/github/forks/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Stars](https://img.shields.io/github/stars/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
-![Contributors](https://img.shields.io/github/contributors/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
-![Repository Size](https://img.shields.io/github/repo-size/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)</br>
+![Contributors](https://img.shields.io/github/contributors/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
+![Repository Size](https://img.shields.io/github/repo-size/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)</br>
 [![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/killerx-music)](https://hub.docker.com/r/rendyprojects/killerx-music/tags)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/KillerX-Music?&style=plastic&logo=github)](https://github.com/Randi356/KillerX-Music/graphs/commit-activity)
 
