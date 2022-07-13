@@ -41,7 +41,7 @@
       "BOT_USERNAME": {
         "description": "botfather without @",
         "value": "",
-        "required": true
+        "required": false
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
@@ -69,7 +69,7 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use database for you.",
         "value": "",
         "required": true
       },
