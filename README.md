@@ -113,7 +113,7 @@ Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
 
 # Final Run KillerX Music
 
-Rendy@Ubuntu~ $ bash start
+Rendy@Ubuntu~ $ bash startup
 
 # [ ctrl a + d ] # save detached 
 
@@ -124,6 +124,7 @@ Rendy@Ubuntu~ $ bash start
 ```console
 Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
+Rendy@Ubuntu~ $ pip3 install pyrogram
 Rendy@Ubuntu~ $ python3 genstring.py
 
 # API_ID # my.telegram.org
@@ -155,6 +156,6 @@ Links : github.com/TeamYukki/YukkiMusicBot
 ```
 # Credits
 
-* [X] dev [Shikar](https://t.me/TeamYukki) YukkiMusicBot
-* [X] coding [Rendy](https://t.me/FFmpegNotInstalled) KillerX-Music
+* [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
+* [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
 * [X] dev [TeamUltroid](https://github.com/TeamUltroid) Ultroid
