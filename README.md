@@ -36,19 +36,19 @@
 
 ## HOW TO REMOVE MODULES START 
 
-1. KillerXMusic/plugins/bot/start.py
+-  KillerXMusic/plugins/bot/start.py <br>
 
 **this remove** `start.py`
 
-2. KillerXMusic/plugins/bot/settings.py
+- KillerXMusic/plugins/bot/settings.py <br>
 
 **this remove** `from KillerXMusic.utils.inline.start import private_panel`
 
-3. KillerXMusic/ultils/inline/init.py
+- KillerXMusic/ultils/inline/init.py <br>
 
 **this remove** `from .start import *`
 
-4. KillerXMusic/ultils/inline/start.py
+- KillerXMusic/ultils/inline/start.py <br>
 
 **this remove** `start.py`
 
