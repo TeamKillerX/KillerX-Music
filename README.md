@@ -100,6 +100,12 @@ Rendy@Ubuntu~ $ docker build -t killerx-music .
 Rendy@Ubuntu- $ docker run -itd killerx-music
 Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
 ```
+# Dᴏᴄᴋᴇʀ Vᴀʀɪᴀʙʟᴇ Eɴᴠ [ VͮРⷬS͛ ]
+```console
+Rendy@Ubuntu~ $ docker build . --rm --force-rm --compress --pull --file Dockerfile -t killerx-music
+Rendy@Ubuntu~ $ docker run --privileged --env-file .env --rm -i killerx-music
+```
+
 # Fɪɴᴀʟ Rᴜɴ KɪʟʟᴇʀXMᴜsɪᴄ
 ```console
 Rendy@Ubuntu~ $ bash startup
