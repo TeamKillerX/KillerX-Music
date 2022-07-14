@@ -66,25 +66,10 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 - Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/VegetaSessionBot)
 
 
-## 🚀 Hᴇʀᴏᴋᴜ Dᴇᴘʟᴏʏᴍᴇɴᴛ
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploy-azure.vercel.app/?src=TeamKillerX/KillerX-Music)
+## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
+We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
+don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read](https://t.me/RendyProjects/919)
 
-## 🌀 Dᴇᴘʟᴏʏ Tᴏ Oᴋᴛᴇᴛᴏ
-
-[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/TeamKillerX/KillerX-Music)
-
-## 🚀 Dᴇᴘʟᴏʏ Tᴏ Rᴀɪʟᴡᴀʏ
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/L9pSIF?referralCode=vZzsp6)
-
-## 🌸 Dᴇᴘʟᴏʏ ᴛᴏ ɢɪᴛʜᴜʙ ᴡᴏʀᴋғʟᴏᴡs
-[![Deploy To Workflows](https://img.shields.io/badge/Deploy&Workflows-1b77FF.svg?style=for-the-badge&logo=workflows)](https://github.com/TeamKillerX/Music-workflows)
-* SECRETS
-```
-CREDS
-GitHubName = Your GitHub username
-GitHubMail = Your GitHub E-mail
-GH_TOKEN
-```
 # Sᴄʀᴇᴇɴsʜᴏᴛ 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
 
