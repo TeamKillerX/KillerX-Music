@@ -1,4 +1,4 @@
-# CodeX By Python
+# CᴏᴅᴇX Bʏ Pʏᴛʜᴏɴ
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6100/badge)](https://bestpractices.coreinfrastructure.org/projects/6100)
 ![Python Version](https://img.shields.io/badge/python-3.9-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
@@ -18,11 +18,17 @@
    If one of the members misuses this repository, we are forced to ban you
    Never ever abuse this repository
 ```
-# KillerXMusic
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
+<p align="centar">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</p>
+
 ```
-[x][KillerXMusic] https://github.com/Randi356/KillerX-Music (OWNER ONLY)
+[KillerXMusic] https://github.com/Randi356/KillerX-Music (OWNER ONLY)
 ```
-# NEW UPDATED
+# Nᴇᴡ Uᴘᴅᴀᴛᴇᴅ
 ```
 • [x] language Sunda
 • [x] language Indonesian
@@ -34,7 +40,7 @@
 • [x] support video
 ```
 
-## HOW TO REMOVE MODULES START 
+## Hᴏᴡ Tᴏ Rᴇᴍᴏᴠᴇ Mᴏᴅᴜʟᴇs Sᴛᴀʀᴛ
 
 -  KillerXMusic/plugins/bot/start.py <br>
 
@@ -53,24 +59,24 @@
 **this remove** `start.py`
 
 
-## 🖇 Generating Pyrogram String Session
+## 🖇 Gᴇɴᴇʀᴀᴛɪɴɢ Pʏʀᴏɢʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ
 
 - Generate a Pyrogram String Session via [Replit](https://replit.com/@Randi356/Vegeta-String)
 
 - Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/VegetaSessionBot)
 
 
-## 🚀 Heroku Deployment
+## 🚀 Hᴇʀᴏᴋᴜ Dᴇᴘʟᴏʏᴍᴇɴᴛ
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploy-azure.vercel.app/?src=TeamKillerX/KillerX-Music)
 
-## 🌀 Deploy To Okteto
+## 🌀 Dᴇᴘʟᴏʏ Tᴏ Oᴋᴛᴇᴛᴏ
 
 [![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/TeamKillerX/KillerX-Music)
 
-## 🚀 Deploy To Railway
+## 🚀 Dᴇᴘʟᴏʏ Tᴏ Rᴀɪʟᴡᴀʏ
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/L9pSIF?referralCode=vZzsp6)
 
-## 🌸 Deploy to github workflows
+## 🌸 Dᴇᴘʟᴏʏ ᴛᴏ ɢɪᴛʜᴜʙ ᴡᴏʀᴋғʟᴏᴡs
 [![Deploy To Workflows](https://img.shields.io/badge/Deploy&Workflows-1b77FF.svg?style=for-the-badge&logo=workflows)](https://github.com/TeamKillerX/Music-workflows)
 * SECRETS
 ```
@@ -79,21 +85,19 @@ GitHubName = Your GitHub username
 GitHubMail = Your GitHub E-mail
 GH_TOKEN
 ```
-# SCREENSHOT 
+# Sᴄʀᴇᴇɴsʜᴏᴛ 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
 
-## START VIDEO CHAT
+## Sᴛᴀʀᴛ Vɪᴅᴇᴏ Cʜᴀᴛ
 ![IMG_20220608_110308_778](https://user-images.githubusercontent.com/63757267/172529171-d7c7fd4f-ab5d-4952-8c52-ecd2197803ab.jpg)
 
-## WATCH ON YOUTUBE
+## Wᴀᴛᴄʜ Oɴ Yᴏᴜᴛᴜʙᴇ
 * Please Click
 
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
 
-# TUTORIAL VPS
+# Tᴜᴛᴏʀɪᴀʟ Vᴘs
 ```console
-# [NEW] KILLERX-MUSIC DOCKER VPS UPDATED
-
 Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
 Rendy@Ubuntu~ $ sudo apt-get install nano -y
 Rendy@Ubuntu~ $ sudo apt-get install screen -y
@@ -110,17 +114,14 @@ Rendy@Ubuntu~ $ screen -S killerx
 Rendy@Ubuntu~ $ docker build -t killerx-music .
 Rendy@Ubuntu- $ docker run -itd killerx-music
 Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
-
-# Final Run KillerX Music
-
-Rendy@Ubuntu~ $ bash startup
-
-# [ ctrl a + d ] # save detached 
-
-# • CREDITS
-# @FFmpegNotInstalled
 ```
-# SESSION STRING VIA VPS 
+# Fɪɴᴀʟ Rᴜɴ KɪʟʟᴇʀXMᴜsɪᴄ
+```console
+Rendy@Ubuntu~ $ bash startup
+```
+- [ ctrl a + d ] # save detached 
+
+# Sᴛʀɪɴɢ Sᴇssɪᴏɴ Vɪᴀ Vᴘs
 ```console
 Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
@@ -131,30 +132,8 @@ Rendy@Ubuntu~ $ python3 genstring.py
 # API_HASH # my.telegram.org
 # number # +628xxxxxxxxx
 ```
-## LAUNCH IN DOCKER CONTAINER
-* Docker
-* docker-compose
 
-Before launch you need to copy file `sample_.env` to file `.env` and fill the values in it.
-Then, simple run the command: `docker-compose up -d`
-You can view the logs by the command: `docker-compose logs -f`
-
-# HOW TO PLAY MUSIC 
-
-| Commad | quotes| | 
-|-|-------|-------|
-| /play  |        | 
-| /vplay |        | 
-| /cplay |        | 
-| /playforce|     | 
-
-check modules plugin commad
-
-# ORIGINAL REPO YUKKI NEW VERSION
-```
-Links : github.com/TeamYukki/YukkiMusicBot
-```
-# Credits
+# Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
 
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
 * [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
