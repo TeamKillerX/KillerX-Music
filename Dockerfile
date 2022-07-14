@@ -11,7 +11,7 @@ RUN apt-get update -y && apt-get upgrade -y \
 # git clone repo // don't editing 
 RUN git clone -b dev https://github.com/TeamKillerX/KillerX-Music/ /home/TeamKillerX/ \
     && chmod 777 /home/TeamKillerX \
-    && && mkdir /home/TeamKillerX/bin/
+    && mkdir /home/TeamKillerX/bin/
 
 # YNTKTS LMAO :) 
 COPY . /app/
