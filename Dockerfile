@@ -20,7 +20,6 @@ WORKDIR /app/
 # install requirements 
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade pip setuptools
-RUN python3 -m pip install --ignore-installed PyYAML
 RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
 RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
 
