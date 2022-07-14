@@ -110,7 +110,7 @@ Rendy@Ubuntu~ $ bash startup
 ```console
 Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
-Rendy@Ubuntu~ $ pip3 install pyrogram
+Rendy@Ubuntu~ $ pip3 install pyrogram==1.4.16
 Rendy@Ubuntu~ $ python3 genstring.py
 
 # API_ID # my.telegram.org
