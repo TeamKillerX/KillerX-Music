@@ -68,7 +68,7 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 
 ## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
 We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
-don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read](https://t.me/RendyProjects/919)
+don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read More](https://t.me/RendyProjects/919)
 
 # Sᴄʀᴇᴇɴsʜᴏᴛ 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
