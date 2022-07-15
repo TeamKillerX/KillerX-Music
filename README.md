@@ -25,28 +25,7 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-
-## Hᴏᴡ Tᴏ Rᴇᴍᴏᴠᴇ Mᴏᴅᴜʟᴇs Sᴛᴀʀᴛ
-
--  KillerXMusic/plugins/bot/start.py
-
-**this remove** `start.py`
-
-- KillerXMusic/plugins/bot/settings.py 
-
-**this remove** `from KillerXMusic.utils.inline.start import private_panel`
-
-- KillerXMusic/ultils/inline/`__init__.py`
-
-**this remove** `from .start import *`
-
-- KillerXMusic/ultils/inline/start.py
-
-**this remove** `start.py`
-
-
 ## 🖇 Gᴇɴᴇʀᴀᴛɪɴɢ Pʏʀᴏɢʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ
-
 - Generate a Pyrogram String Session via [Replit](https://replit.com/@Randi356/Vegeta-String)
 
 - Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/VegetaSessionBot)
@@ -112,7 +91,6 @@ Rendy@Ubuntu~ $ python3 genstring.py
 ```
 
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
-
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
 * [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
 * [X] dev [TeamUltroid](https://github.com/TeamUltroid) Ultroid
