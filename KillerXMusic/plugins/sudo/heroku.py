@@ -318,6 +318,7 @@ async def update_(client, message, _):
             f"{nrs.text}\n\nBot was updated successfully! Now, wait for 1 - 2 mins until the bot reboots!"
         )
         os.system("pip3 install -r requirements.txt")
+        os.system("pip3 install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt")
         os.system(f"kill -9 {os.getpid()} && bash start")
         exit()
 
