@@ -25,36 +25,22 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-```
-[KillerXMusic] https://github.com/Randi356/KillerX-Music (OWNER ONLY)
-```
-# Nᴇᴡ Uᴘᴅᴀᴛᴇᴅ
-```
-• [x] language Sunda
-• [x] language Indonesian
-• [x] language Jerman
-• [x] button play {SUPPORT_CHANNEL}
-• [x] supported /start
-• [x] playmode 
-• [x] force subscribe channel
-• [x] support video
-```
 
 ## Hᴏᴡ Tᴏ Rᴇᴍᴏᴠᴇ Mᴏᴅᴜʟᴇs Sᴛᴀʀᴛ
 
--  KillerXMusic/plugins/bot/start.py <br>
+-  KillerXMusic/plugins/bot/start.py
 
 **this remove** `start.py`
 
-- KillerXMusic/plugins/bot/settings.py <br>
+- KillerXMusic/plugins/bot/settings.py 
 
 **this remove** `from KillerXMusic.utils.inline.start import private_panel`
 
-- KillerXMusic/ultils/inline/init.py <br>
+- KillerXMusic/ultils/inline/`__init__.py`
 
 **this remove** `from .start import *`
 
-- KillerXMusic/ultils/inline/start.py <br>
+- KillerXMusic/ultils/inline/start.py
 
 **this remove** `start.py`
 
@@ -100,6 +86,7 @@ Rendy@Ubuntu~ $ docker build -t killerx-music .
 Rendy@Ubuntu- $ docker run -itd killerx-music
 Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
 ```
+
 # Dᴏᴄᴋᴇʀ Vᴀʀɪᴀʙʟᴇ Eɴᴠ [ VͮРⷬS͛ ]
 ```console
 Rendy@Ubuntu~ $ docker build . --rm --force-rm --compress --pull --file Dockerfile -t killerx-music
