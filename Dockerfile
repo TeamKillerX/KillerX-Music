@@ -16,6 +16,7 @@ RUN git clone -b dev https://github.com/TeamKillerX/KillerX-Music/ /home/TeamKil
 # YNTKTS LMAO :) 
 COPY . /app/
 WORKDIR /app/
+RUN chmod 777 /app/
 
 # install requirements 
 RUN python3 -m pip install --upgrade pip
