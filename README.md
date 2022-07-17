@@ -55,7 +55,7 @@ Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
 Rendy@Ubuntu~ $ sudo apt-get install nano -y
 Rendy@Ubuntu~ $ sudo apt-get install screen -y
 Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
-Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip
+Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
 Rendy@Ubuntu~ $ cd KillerX-Music
