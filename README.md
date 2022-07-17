@@ -48,35 +48,37 @@ don't want innocent users who sign up there to be banned from the platforms as a
 
 # Tᴜᴛᴏʀɪᴀʟ Vᴘs
 ```console
+Rendy@Ubuntu~ $ sudo su
 Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
 Rendy@Ubuntu~ $ sudo apt-get install nano -y
 Rendy@Ubuntu~ $ sudo apt-get install screen -y
 Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
 Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip
-Rendy@Ubuntu~ $ sudo systemctl start docker
-Rendy@Ubuntu~ $ sudo systemctl enable docker
+Rendy@Ubuntu~ $ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
 Rendy@Ubuntu~ $ cd KillerX-Music
 Rendy@Ubuntu~ $ cp sample.env .env
 Rendy@Ubuntu~ $ nano .env
 # config vars [ ctrl s + x ] # https://github.com/TeamKillerX/KillerX-Music/blob/dev/sample.env
 Rendy@Ubuntu~ $ screen -S killerx
-Rendy@Ubuntu~ $ docker build -t killerx-music .
-Rendy@Ubuntu- $ docker run -itd killerx-music
-Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
+Rendy@Ubuntu~ $ pip3 install -U -r requirements.txt && pip3 install --no-cache-dir -r re*/st*/op*.txt
 ```
-
-# Dᴏᴄᴋᴇʀ Vᴀʀɪᴀʙʟᴇ Eɴᴠ [ VͮРⷬS͛ ]
+## Iɴsᴛᴀʟʟ Rᴇᴏ̨ᴜɪʀᴇᴍᴇɴᴛs
 ```console
-Rendy@Ubuntu~ $ docker build . --rm --force-rm --compress --pull --file Dockerfile -t killerx-music
-Rendy@Ubuntu~ $ docker run --privileged --env-file .env --rm -i killerx-music
+Rendy@Ubuntu~ $ pip3 install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
+Rendy@Ubuntu~ $ pip3 install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
 ```
 
 # Fɪɴᴀʟ Rᴜɴ KɪʟʟᴇʀXMᴜsɪᴄ
 ```console
 Rendy@Ubuntu~ $ python3 -m KillerXMusic
 ```
-- [ ctrl a + d ] # save detached 
+- Linux `bash start`
+- window `python3 -m KillerXMusic`
+
+## Sᴄʀᴇᴇɴ Dᴇᴛᴀᴄʜᴇᴅ
+![IMG-20220717-WA0000](https://user-images.githubusercontent.com/90479255/179392806-7099ef3d-ed9a-43cd-80e8-b0c99f5a26d0.jpg)
+- use `ctrl a + d`
 
 # Sᴛʀɪɴɢ Sᴇssɪᴏɴ Vɪᴀ Vᴘs
 ```console
