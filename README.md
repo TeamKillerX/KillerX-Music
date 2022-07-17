@@ -74,7 +74,7 @@ Rendy@Ubuntu~ $ docker run --privileged --env-file .env --rm -i killerx-music
 
 # Fɪɴᴀʟ Rᴜɴ KɪʟʟᴇʀXMᴜsɪᴄ
 ```console
-Rendy@Ubuntu~ $ bash startup
+Rendy@Ubuntu~ $ python3 -m KillerXMusic
 ```
 - [ ctrl a + d ] # save detached 
 
