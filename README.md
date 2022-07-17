@@ -30,6 +30,8 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 
 - Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/VegetaSessionBot)
 
+## Hᴀᴄᴋᴇʀ Nᴏᴏʙ ? 🤣
+[mp4.webm](https://user-images.githubusercontent.com/90479255/179393790-dff0ecac-3b94-404e-bed2-4bffd78bb47e.webm)
 
 ## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
 We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
