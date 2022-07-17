@@ -28,4 +28,4 @@ RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TeamKillerX/K
 RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
 
 # final run 
-CMD ["bash","./resources/startup.sh"]
+CMD ["bash", "startup.sh"]
