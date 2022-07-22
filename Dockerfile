@@ -8,20 +8,24 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# git clone repo // don't editing 
-RUN git clone -b dev https://github.com/TeamKillerX/KillerX-Music/ /home/TeamKillerX/ \
-    && chmod 777 /home/TeamKillerX \
-    && mkdir /home/TeamKillerX/bin/
+RUN apt-get autoremove --purge
+RUN pip3 install --upgrade pip setuptools 
+RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
+RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
+RUN rm -r /root/.cache
+RUN git clone -b dev https://github.com/TeamKillerX/KillerX-Music /root/TeamKillerX
+RUN mkdir /root/TeamKillerX/bin/
+WORKDIR /root/TeamKillerX/
+RUN chmod +x /usr/local/bin/*
 
 # YNTKTS LMAO :) 
 COPY . /app/
 WORKDIR /app/
+RUN chmod 777 /app/
 
 # install requirements 
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
 RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
 
 # final run 
-CMD [ "bash", "startup" ]
+CMD ["bash", "startup.sh"]

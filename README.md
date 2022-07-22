@@ -25,50 +25,17 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-```
-[KillerXMusic] https://github.com/Randi356/KillerX-Music (OWNER ONLY)
-```
-# Nᴇᴡ Uᴘᴅᴀᴛᴇᴅ
-```
-• [x] language Sunda
-• [x] language Indonesian
-• [x] language Jerman
-• [x] button play {SUPPORT_CHANNEL}
-• [x] supported /start
-• [x] playmode 
-• [x] force subscribe channel
-• [x] support video
-```
-
-## Hᴏᴡ Tᴏ Rᴇᴍᴏᴠᴇ Mᴏᴅᴜʟᴇs Sᴛᴀʀᴛ
-
--  KillerXMusic/plugins/bot/start.py <br>
-
-**this remove** `start.py`
-
-- KillerXMusic/plugins/bot/settings.py <br>
-
-**this remove** `from KillerXMusic.utils.inline.start import private_panel`
-
-- KillerXMusic/ultils/inline/init.py <br>
-
-**this remove** `from .start import *`
-
-- KillerXMusic/ultils/inline/start.py <br>
-
-**this remove** `start.py`
-
-
 ## 🖇 Gᴇɴᴇʀᴀᴛɪɴɢ Pʏʀᴏɢʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ
-
 - Generate a Pyrogram String Session via [Replit](https://replit.com/@Randi356/Vegeta-String)
 
 - Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/VegetaSessionBot)
 
+## Hᴀᴄᴋᴇʀ Nᴏᴏʙ ? 🤣
+[mp4.webm](https://user-images.githubusercontent.com/90479255/179393790-dff0ecac-3b94-404e-bed2-4bffd78bb47e.webm)
 
 ## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
 We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
-don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read](https://t.me/RendyProjects/919)
+don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read More](https://t.me/RendyProjects/919)
 
 # Sᴄʀᴇᴇɴsʜᴏᴛ 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
@@ -83,34 +50,43 @@ don't want innocent users who sign up there to be banned from the platforms as a
 
 # Tᴜᴛᴏʀɪᴀʟ Vᴘs
 ```console
+Rendy@Ubuntu~ $ sudo su
 Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
 Rendy@Ubuntu~ $ sudo apt-get install nano -y
 Rendy@Ubuntu~ $ sudo apt-get install screen -y
 Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
-Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip
-Rendy@Ubuntu~ $ sudo systemctl start docker
-Rendy@Ubuntu~ $ sudo systemctl enable docker
+Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip ffmpeg -y
+Rendy@Ubuntu~ $ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
 Rendy@Ubuntu~ $ cd KillerX-Music
 Rendy@Ubuntu~ $ cp sample.env .env
 Rendy@Ubuntu~ $ nano .env
 # config vars [ ctrl s + x ] # https://github.com/TeamKillerX/KillerX-Music/blob/dev/sample.env
 Rendy@Ubuntu~ $ screen -S killerx
-Rendy@Ubuntu~ $ docker build -t killerx-music .
-Rendy@Ubuntu- $ docker run -itd killerx-music
-Rendy@Ubuntu~ $ docker run -v $(pwd)data:/app/data --rm -itd killerx-music
+Rendy@Ubuntu~ $ pip3 install -U -r requirements.txt && pip3 install --no-cache-dir -r re*/st*/op*.txt
 ```
+## Iɴsᴛᴀʟʟ Rᴇᴏ̨ᴜɪʀᴇᴍᴇɴᴛs
+```console
+Rendy@Ubuntu~ $ pip3 install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
+Rendy@Ubuntu~ $ pip3 install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
+```
+
 # Fɪɴᴀʟ Rᴜɴ KɪʟʟᴇʀXMᴜsɪᴄ
 ```console
-Rendy@Ubuntu~ $ bash startup
+Rendy@Ubuntu~ $ python3 -m KillerXMusic
 ```
-- [ ctrl a + d ] # save detached 
+- Linux `bash start`
+- window `python3 -m KillerXMusic`
+
+## Sᴄʀᴇᴇɴ Dᴇᴛᴀᴄʜᴇᴅ
+![IMG-20220717-WA0000](https://user-images.githubusercontent.com/90479255/179392806-7099ef3d-ed9a-43cd-80e8-b0c99f5a26d0.jpg)
+- use `ctrl a + d`
 
 # Sᴛʀɪɴɢ Sᴇssɪᴏɴ Vɪᴀ Vᴘs
 ```console
 Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
-Rendy@Ubuntu~ $ pip3 install pyrogram
+Rendy@Ubuntu~ $ pip3 install pyrogram==1.4.16
 Rendy@Ubuntu~ $ python3 genstring.py
 
 # API_ID # my.telegram.org
@@ -119,7 +95,6 @@ Rendy@Ubuntu~ $ python3 genstring.py
 ```
 
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
-
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
 * [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
 * [X] dev [TeamUltroid](https://github.com/TeamUltroid) Ultroid
