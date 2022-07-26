@@ -102,9 +102,9 @@ Rendy@Ubuntu~ $ pip3 install pyrogram==1.4.16
 Rendy@Ubuntu~ $ python3 genstring.py
 ```
 
-> API_ID  `my.telegram.org`
-  API_HASH `my.telegram.org`
-  NUMBER  +628xxxxxxxxx
+> - API_ID  `my.telegram.org`
+> - API_HASH `my.telegram.org`
+> - NUMBER  +628xxxxxxxxx
 
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
