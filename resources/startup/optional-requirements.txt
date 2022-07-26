@@ -13,7 +13,6 @@ pillow
 psutil
 pykeyboard
 python-dotenv
-pyyaml==5.4
 PyYAML
 psycopg2-binary
 requests
