@@ -34,8 +34,19 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 [mp4.webm](https://user-images.githubusercontent.com/90479255/179393790-dff0ecac-3b94-404e-bed2-4bffd78bb47e.webm)
 
 ## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
-We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
+> We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
 don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read More](https://t.me/RendyProjects/919)
+
+# Cᴏᴅᴇ Exᴀᴍᴘʟᴇ 
+> pyrogram Links `https://docs.pyrogram.org`
+```python
+from pyrogram import filters
+from KillerXMusic import app
+
+@app.on_message(filters.command('spam'))
+def spam(bot, message):
+    app.send_photo(message.chat.id, "telegraph img links")
+```
 
 # Sᴄʀᴇᴇɴsʜᴏᴛ 
 ![Screenshot_20220603-110840_Nekogram~01](https://user-images.githubusercontent.com/63757267/171784392-ded5a455-1dbf-42c1-aa56-3cf078551bae.png)
@@ -49,6 +60,7 @@ don't want innocent users who sign up there to be banned from the platforms as a
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
 
 # Tᴜᴛᴏʀɪᴀʟ Vᴘs
+> Get Vps Link `azure.com` or `digitalocean.com`
 ```console
 Rendy@Ubuntu~ $ sudo su
 Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
@@ -88,11 +100,11 @@ Rendy@Ubuntu~ $ sudo apt-get install python3-pip ffmpeg -y
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music && cd KillerX-Music
 Rendy@Ubuntu~ $ pip3 install pyrogram==1.4.16
 Rendy@Ubuntu~ $ python3 genstring.py
-
-# API_ID # my.telegram.org
-# API_HASH # my.telegram.org
-# number # +628xxxxxxxxx
 ```
+
+> API_ID  `my.telegram.org`
+  API_HASH `my.telegram.org`
+  NUMBER  +628xxxxxxxxx
 
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
