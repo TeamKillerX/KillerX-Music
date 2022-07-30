@@ -83,7 +83,7 @@ repo(){
 installation(){
 	pprint "\n\nUpgrading pip and installing dependency packages.. "
 	pip3 install -U pip &>>pypilog.txt &&
-	pip3 install -U -r requirements.txt &>>pypilog.txt &&
+	pip3 install -U -r requirements.txt && pip3 install --no-cache-dir -r re*/st*/op*.txt &>>pypilog.txt &&
 	pprint "DONE.\n" "cgreen" && return
 	pprint "FAIL.\n" "cred"
 	exit 1
@@ -111,10 +111,11 @@ pprint "\nEnter Your Values Below\n\n\n"
 pprint "API ID: "; color_reset; read api_id
 pprint "\nAPI HASH: "; color_reset; read api_hash
 pprint "\nBOT TOKEN: "; color_reset; read bot_token
-pprint "\nLOG GROUP ID: "; color_reset; read logger
+pprint "\nLOG GROUP ID: "; color_reset; read log_group_id
 pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read string_session
-pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
-pprint "\nOwner Id:"; color_reset; read ownid
+pprint "\nMUSIC BOT NAME: "; color_reset; read music_bot_name
+pprint "\nOWNER ID: "; color_reset; read owner_id
+pprint "\nSUPPORT CHANNEL: "; color_reset; read support_channel
 
 pprint "\n\nProcessing your vars, Wait a while!" "cgreen"
 
@@ -125,10 +126,11 @@ fi
 echo """API_ID = $api_id
 API_HASH = $api_hash
 BOT_TOKEN = $bot_token
-LOG_GROUP_ID = $logger
-MUSIC_BOT_NAME = $mbt
+LOG_GROUP_ID = $log_group_id
+MUSIC_BOT_NAME = $music_bot_name
 STRING_SESSION = $string_session
-OWNER_ID = $ownid""" > .env
+SUPPORT_CHANNEL = $support_channel
+OWNER_ID = $owner_id""" > .env
 clear
 pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using KillerX Installer, now you can proceed by starting the bot with bash start!"
 pprint "\n\n\nWant more vars?"
