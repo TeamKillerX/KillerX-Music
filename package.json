@@ -1,0 +1,8 @@
+{
+  "name": "KillerX-Music",
+  "description": "killerx music nodejs",
+  "version": "1.0.0",
+  "engines": {
+    "node": "17.9.0"
+  }
+}
