@@ -23,10 +23,9 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
+# Deploy to Heroku
 
-## ⚠️ Hᴇʀᴏᴋᴜ / Oᴋᴛᴇᴛᴏ / Rᴀɪʟᴡᴀʏ
-> We have temporarily disabled the deployment for all these cloud service platforms due to security and ban issue, we
-don't want innocent users who sign up there to be banned from the platforms as a result of this deployment, [Read More](https://t.me/RendyProjects/919)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/randycyber/random-2)
 
 # Cᴏᴅᴇ Exᴀᴍᴘʟᴇ 
 > pyrogram Links `https://docs.pyrogram.org`
