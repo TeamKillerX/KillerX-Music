@@ -43,6 +43,9 @@ def spam(bot, message):
 
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
 
+# Donate
+<a href="https://adpaylink.com/ref/randydev12"><img src="https://www.adpaylink.com/img/banneradl.png" title="Make short links and earn the biggest money"/></a>
+
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
 * [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
