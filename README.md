@@ -23,8 +23,9 @@ KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-> Wiki Updates
-`https://github.com/TeamKillerX/KillerX-Music/wiki`
+##  Wiki Updates
+> please link
+[WIKI](https://github.com/TeamKillerX/KillerX-Music/wiki)
 
 # Cᴏᴅᴇ Exᴀᴍᴘʟᴇ 
 > pyrogram Links `https://docs.pyrogram.org`
@@ -42,8 +43,11 @@ def spam(bot, message):
 
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
 
-# Donate
-<a href="https://adpaylink.com/ref/randydev12"><img src="https://www.adpaylink.com/img/banneradl.png" title="Make short links and earn the biggest money"/></a>
+## Support and Help:
+We do not provide any support or help or take any questions or queries around this repo, if you want to deploy it you are on your own, learn to read or ask in some python dev group or stalkoverflow, the internet is your learning ground - but do NOT come our support group asking any help around the code or the repo, you will get immediately banned and just cussed at. 
+
+We did not run this bot or this repo to feed every entititled user who demands our dedicated time and attention, we are tired of it and the horrible community around kangs.
+
 
 # Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
 * [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
