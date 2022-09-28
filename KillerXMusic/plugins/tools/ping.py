@@ -15,20 +15,16 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from KillerXMusic import app
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.utils import bot_sys_stats
 from KillerXMusic.utils.decorators.language import language
 
-### Commands
-PING_COMMAND = get_command("PING_COMMAND")
+### Commands // do not change
+# PING_COMMAND = get_command("PING_COMMAND")
 
 
-@app.on_message(
-    filters.command(PING_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("ping") & other_filters & ~BANNED_USERS)
 @language
 async def ping_com(client, message: Message, _):
     response = await message.reply_photo(
