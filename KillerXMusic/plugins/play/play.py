@@ -22,6 +22,7 @@ from strings import get_command
 from KillerXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
 from KillerXMusic.core.call import KillerX
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.utils import seconds_to_min, time_to_seconds
 from KillerXMusic.utils.channelplay import get_channeplayCB
 from KillerXMusic.utils.database import is_video_allowed
@@ -36,15 +37,9 @@ from KillerXMusic.utils.logger import play_logs
 from KillerXMusic.utils.stream.stream import stream
 
 # Command
-PLAY_COMMAND = get_command("PLAY_COMMAND")
+# PLAY_COMMAND = get_command("PLAY_COMMAND") # DO NOT CHANGE
 
-
-@app.on_message(
-    filters.command(PLAY_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("play") & other_filters & ~BANNED_USERS)
 @PlayWrapper
 async def play_commnd(
     client,
