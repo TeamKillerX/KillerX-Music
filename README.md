@@ -1,4 +1,4 @@
-# CᴏᴅᴇX Bʏ Pʏᴛʜᴏɴ
+# KILLERX MUSIC
 ![Python Version](https://img.shields.io/badge/python-3.9-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Forks](https://img.shields.io/github/forks/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
@@ -16,30 +16,38 @@
    If one of the members misuses this repository, we are forced to ban you
    Never ever abuse this repository
 ```
-<p align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-KɪʟʟᴇʀXMᴜsɪᴄ Pʀᴏᴊᴇᴄᴛs
-<p align="centar">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-</p>
 
-##  Wiki Updates
-> please link
-[WIKI](https://github.com/TeamKillerX/KillerX-Music/wiki)
-
-# Cᴏᴅᴇ Exᴀᴍᴘʟᴇ 
-> pyrogram Links `https://docs.pyrogram.org`
+# COMMAND PREFIX
 ```python
-from pyrogram import filters
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic import app
 
-@app.on_message(filters.command('spam'))
+@app.on_message(command("example") & other_filters)
 def spam(bot, message):
     app.send_photo(message.chat.id, "telegraph img links")
 ```
 
-## Wᴀᴛᴄʜ Oɴ Yᴏᴜᴛᴜʙᴇ
-> * Please Click
+# TUTORIAL VPS
+```console
+Rendy@Ubuntu~ $ sudo su
+Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
+Rendy@Ubuntu~ $ sudo apt-get install nano -y
+Rendy@Ubuntu~ $ sudo apt-get install screen -y
+Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
+Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip ffmpeg -y
+Rendy@Ubuntu~ $ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
+Rendy@Ubuntu~ $ cd KillerX-Music
+Rendy@Ubuntu~ $ cp sample.env .env
+Rendy@Ubuntu~ $ nano .env
+# [ ctrl s + ctrl x ] # done
+Rendy@Ubuntu~ $ screen -S killerx
+Rendy@Ubuntu~ $ pip3 install -r req*
+Rendy@Ubuntu~ $ bash start
+```
+
+## WATCH ON YOUTUBE
+> * Please click image
 
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
 
@@ -49,7 +57,7 @@ We do not provide any support or help or take any questions or queries around th
 We did not run this bot or this repo to feed every entititled user who demands our dedicated time and attention, we are tired of it and the horrible community around kangs.
 
 
-# Cʀᴇᴅɪᴛs Aʟʟ Dᴇᴠᴇʟᴏᴘᴇʀs
-* [X] dev [TeamYukki](https://github.com/TeamYukki) YukkiMusicBot
-* [X] coding [TeamKillerX](https://github.com/TeamKillerX) KillerX-Music
-* [X] dev [TeamUltroid](https://github.com/TeamUltroid) Ultroid
+# CREDITS 
+* [X] dev [TeamYukki](https://github.com/TeamYukki)
+* [X] coding [TeamKillerX](https://github.com/TeamKillerX)
+* [X] dev [TeamUltroid](https://github.com/TeamUltroid)

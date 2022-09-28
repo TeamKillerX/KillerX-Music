@@ -26,7 +26,7 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from KillerXMusic import app
 from KillerXMusic.misc import SUDOERS
-
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 async def aexec(code, client, message):
     exec(
@@ -42,12 +42,7 @@ async def edit_or_reply(msg: Message, **kwargs):
     await func(**{k: v for k, v in kwargs.items() if k in spec})
 
 
-@app.on_message(
-    filters.command("eval")
-    & SUDOERS
-    & ~filters.forwarded
-    & ~filters.via_bot
-)
+@app.on_message(command("eval") & SUDOERS & other_filters)
 async def executor(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(

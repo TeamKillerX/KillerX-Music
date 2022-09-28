@@ -14,6 +14,7 @@ from pyrogram.types import CallbackQuery, Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
 from KillerXMusic import app
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.misc import db
 from KillerXMusic.utils.database import get_authuser_names, get_cmode
@@ -21,17 +22,12 @@ from KillerXMusic.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
 from KillerXMusic.utils.formatters import alpha_to_int
 
-### Multi-Lang Commands
-RELOAD_COMMAND = get_command("RELOAD_COMMAND")
-RESTART_COMMAND = get_command("RESTART_COMMAND")
+### Multi-Lang Commands // do not change
+# RELOAD_COMMAND = get_command("RELOAD_COMMAND")
+# RESTART_COMMAND = get_command("RESTART_COMMAND")
 
 
-@app.on_message(
-    filters.command(RELOAD_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("reload") & other_filters & ~BANNED_USERS)
 @language
 async def reload_admin_cache(client, message: Message, _):
     try:
@@ -54,12 +50,7 @@ async def reload_admin_cache(client, message: Message, _):
         )
 
 
-@app.on_message(
-    filters.command(RESTART_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("restart") & other_filters & ~BANNED_USERS)
 @AdminActual
 async def restartbot(client, message: Message, _):
     mystic = await message.reply_text(

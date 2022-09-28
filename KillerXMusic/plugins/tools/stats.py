@@ -22,6 +22,7 @@ import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
 from KillerXMusic import YouTube, app
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.core.userbot import assistants
 from KillerXMusic.misc import SUDOERS, pymongodb
 from KillerXMusic.plugins import ALL_MODULES
@@ -40,17 +41,12 @@ from KillerXMusic.utils.inline.stats import (back_stats_buttons,
 
 loop = asyncio.get_running_loop()
 
-# Commands
+# COMMAND // DO NOT CHANGE
 GSTATS_COMMAND = get_command("GSTATS_COMMAND")
 STATS_COMMAND = get_command("STATS_COMMAND")
 
 
-@app.on_message(
-    filters.command(STATS_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("stats") & other_filters & ~BANNED_USERS)
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(
@@ -63,12 +59,7 @@ async def stats_global(client, message: Message, _):
     )
 
 
-@app.on_message(
-    filters.command(GSTATS_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("gstats") & other_filters & ~BANNED_USERS)
 @language
 async def gstats_global(client, message: Message, _):
     mystic = await message.reply_text(_["gstats_1"])

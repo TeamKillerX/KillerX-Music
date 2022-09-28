@@ -21,20 +21,16 @@ from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from strings import get_command
 from KillerXMusic import YouTube, app
+from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.utils.decorators.language import language, languageCB
 from KillerXMusic.utils.formatters import convert_bytes
 from KillerXMusic.utils.inline.song import song_markup
 
-# Command
-SONG_COMMAND = get_command("SONG_COMMAND")
+# COMMAND // DO NOT CHANGE
+# SONG_COMMAND = get_command("SONG_COMMAND")
 
 
-@app.on_message(
-    filters.command(SONG_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("song") & other_filters & ~BANNED_USERS)
 @language
 async def song_commad_group(client, message: Message, _):
     upl = InlineKeyboardMarkup(
@@ -53,12 +49,7 @@ async def song_commad_group(client, message: Message, _):
 # Song Module
 
 
-@app.on_message(
-    filters.command(SONG_COMMAND)
-    & filters.private
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("video") & other_filters & ~BANNED_USERS)
 @language
 async def song_commad_private(client, message: Message, _):
     await message.delete()

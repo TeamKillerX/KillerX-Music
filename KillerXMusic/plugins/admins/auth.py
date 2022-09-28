@@ -9,7 +9,7 @@
 
 from pyrogram import filters
 from pyrogram.types import Message
-
+from KillerXMusic.nocmds.prefix import command, other_filters
 from config import BANNED_USERS, adminlist
 from strings import get_command
 from KillerXMusic import app
@@ -19,18 +19,13 @@ from KillerXMusic.utils.database import (delete_authuser, get_authuser,
 from KillerXMusic.utils.decorators import AdminActual, language
 from KillerXMusic.utils.formatters import int_to_alpha
 
-# Command
-AUTH_COMMAND = get_command("AUTH_COMMAND")
-UNAUTH_COMMAND = get_command("UNAUTH_COMMAND")
-AUTHUSERS_COMMAND = get_command("AUTHUSERS_COMMAND")
+# COMMAND // DO NOT CHANGE
+# AUTH_COMMAND = get_command("AUTH_COMMAND")
+# UNAUTH_COMMAND = get_command("UNAUTH_COMMAND")
+# AUTHUSERS_COMMAND = get_command("AUTHUSERS_COMMAND")
 
 
-@app.on_message(
-    filters.command(AUTH_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("auth") & other_filters & ~BANNED_USERS)
 @AdminActual
 async def auth(client, message: Message, _):
     if not message.reply_to_message:
@@ -92,12 +87,7 @@ async def auth(client, message: Message, _):
         await message.reply_text(_["auth_3"])
 
 
-@app.on_message(
-    filters.command(UNAUTH_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+@app.on_message(command("unauth") & other_filters & ~BANNED_USERS)
 @AdminActual
 async def unauthusers(client, message: Message, _):
     if not message.reply_to_message:
@@ -130,12 +120,8 @@ async def unauthusers(client, message: Message, _):
         return await message.reply_text(_["auth_5"])
 
 
-@app.on_message(
-    filters.command(AUTHUSERS_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+
+@app.on_message(command("authusers") & other_filters & ~BANNED_USERS)
 @language
 async def authusers(client, message: Message, _):
     _playlist = await get_authuser_names(message.chat.id)
