@@ -14,7 +14,7 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-from .nocmds.devep import *
+from KillerXMusic.nocmds.devep import *
 import config
 
 from ..logging import LOGGER
