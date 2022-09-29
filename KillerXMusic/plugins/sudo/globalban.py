@@ -18,7 +18,7 @@ from strings import get_command
 from KillerXMusic import app
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.nocmds.prefix import command, other_filters
-from KillerXMusic.nocmds.nothing import OWNER_ID
+from KillerXMusic import OWNER_ID
 from KillerXMusic.utils import get_readable_time
 from KillerXMusic.utils.database import (add_banned_user,
                                        get_banned_count,
