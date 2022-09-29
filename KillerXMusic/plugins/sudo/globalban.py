@@ -18,6 +18,7 @@ from strings import get_command
 from KillerXMusic import app
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.nocmds.prefix import command, other_filters
+from .nocmds.nothing import *
 from KillerXMusic.utils import get_readable_time
 from KillerXMusic.utils.database import (add_banned_user,
                                        get_banned_count,
@@ -33,7 +34,7 @@ from KillerXMusic.utils.decorators.language import language
 # GBANNED_COMMAND = get_command("GBANNED_COMMAND")
 
 
-@app.on_message(command("gban") & other_filters & SUDOERS)
+@app.on_message(command("gban") & other_filters & SUDOERS & OWNER_ID)
 @language
 async def gbanuser(client, message: Message, _):
     if not message.reply_to_message:
@@ -52,6 +53,8 @@ async def gbanuser(client, message: Message, _):
         return await message.reply_text(_["gban_2"])
     elif user_id in SUDOERS:
         return await message.reply_text(_["gban_3"])
+    elif user_id in OWNER_ID:
+        return await message.reply_text("BLACKLIST GBAN LU MUKA KONTOL") 
     is_gbanned = await is_banned_user(user_id)
     if is_gbanned:
         return await message.reply_text(_["gban_4"].format(mention))
@@ -82,7 +85,7 @@ async def gbanuser(client, message: Message, _):
     await mystic.delete()
 
 
-@app.on_message(command("ungban") & other_filters & SUDOERS)
+@app.on_message(command("ungban") & other_filters & SUDOERS & OWNER_ID)
 @language
 async def gungabn(client, message: Message, _):
     if not message.reply_to_message:
@@ -125,7 +128,7 @@ async def gungabn(client, message: Message, _):
     await mystic.delete()
 
 
-@app.on_message(command("gbanlist") & other_filters & SUDOERS)
+@app.on_message(command("gbanlist") & other_filters & SUDOERS & OWNER_ID)
 @language
 async def gbanned_list(client, message: Message, _):
     counts = await get_banned_count()
