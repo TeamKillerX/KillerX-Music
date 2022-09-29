@@ -14,7 +14,7 @@ import heroku3
 from pyrogram import filters
 
 from KillerXMusic.nocmds.devep import *
-from config import HEROKU API_KEY, HEROKU_APP_NAME, MONGO_DB_URI
+from config import HEROKU_API_KEY, HEROKU_APP_NAME, MONGO_DB_URI
 from KillerXMusic.core.mongo import pymongodb
 
 from .logging import LOGGER
