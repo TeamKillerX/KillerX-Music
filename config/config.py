@@ -46,19 +46,6 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
-# Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)  # Input type must be interger
-
-# DON'T REMOVED HERE
-# YOUR FORK KANGER
-OWNER_ID.append(1191668125)
-OWNER_ID.append(844432220)
-OWNER_ID.append(1939846254)
-
-# DON'T REMOVE ID // GBAN
-
 # COMMAND PRFIX
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 
