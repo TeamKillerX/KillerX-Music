@@ -1,6 +1,6 @@
 # DO NOT CHANGE // AUTO CRASH
 
-from .nocmds.devep import *
+from KillerXMusic.nocmds.devep import *
 
 while 0 < 6:
     _OWNER_ID = get(
