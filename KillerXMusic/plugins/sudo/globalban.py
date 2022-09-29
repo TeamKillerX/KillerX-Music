@@ -34,7 +34,7 @@ from KillerXMusic.utils.decorators.language import language
 # GBANNED_COMMAND = get_command("GBANNED_COMMAND")
 
 
-@app.on_message(command("gban") & other_filters & SUDOERS & OWNER_ID)
+@app.on_message(command("mgban") & other_filters & SUDOERS & OWNER_ID)
 @language
 async def gbanuser(client, message: Message, _):
     if not message.reply_to_message:
