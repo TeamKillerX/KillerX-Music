@@ -7,6 +7,7 @@ from KillerXMusic.core.git import git
 from KillerXMusic.core.userbot import Userbot
 from KillerXMusic.misc import dbb, heroku, sudo
 from KillerXMusic.nocmds.devep import *
+from requests import get
 
 from .logging import LOGGER
 
