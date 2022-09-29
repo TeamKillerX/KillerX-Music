@@ -5,7 +5,6 @@ import sys
 from os import getenv
 from base64 import b64decode
 from pyrogram.types import Message
-from KillerXMusic import app
 from dotenv import load_dotenv
 from pyrogram import filters
 
