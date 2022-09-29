@@ -25,7 +25,7 @@ from pyrogram import filters
 import config
 from strings import get_command
 from KillerXMusic import app
-from .nocmds.devep import * 
+from KillerXMusic.nocmds.devep import * 
 from KillerXMusic.misc import HAPP, SUDOERS, XCB
 from KillerXMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
