@@ -13,7 +13,8 @@ import time
 import heroku3
 from pyrogram import filters
 
-import config
+from KillerXMusic.nocmds.devep import *
+from config import HEROKU API_KEY, HEROKU_APP_NAME, MONGO_DB_URI
 from KillerXMusic.core.mongo import pymongodb
 
 from .logging import LOGGER
@@ -53,7 +54,7 @@ def dbb():
 
 def sudo():
     global SUDOERS
-    OWNER = config.OWNER_ID
+    OWNER = devep.OWNER_ID
     if config.MONGO_DB_URI is None:
         for user_id in OWNER:
             SUDOERS.add(user_id)
