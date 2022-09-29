@@ -9,4 +9,3 @@
 #
 
 from .config import *
-from config.nocmds import *
