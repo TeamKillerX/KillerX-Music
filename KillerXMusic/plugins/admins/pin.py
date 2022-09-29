@@ -5,7 +5,7 @@ from KillerXMusic.nocmds.prefix import *
 
 # pinned disabled notification 
 @app.on_message(command("pin") & other_filters) 
-def pin(bot, message):
+def pin(bot, message) -> str:
     chatid = message.chat.id
     msgid = msg.reply_to_message.message_id if msg.reply_to_message else msg.message_id
     if msg.chat.username:
