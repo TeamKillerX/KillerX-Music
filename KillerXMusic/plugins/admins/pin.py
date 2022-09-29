@@ -1,5 +1,5 @@
 # Credits : @rencprx 
-
+"""
 from KillerXMusic import app
 from KillerXMusic.nocmds.prefix import *
 
@@ -16,3 +16,4 @@ def pin(bot, message) -> str:
         message_link = f"https://t.me/c/{link_chat_id}/{msgid}"
     app.pin_chat_message(chatid, msgid, disable_notification=True)
     await message.reply_text("Pinned successfully")
+"""
