@@ -6,6 +6,7 @@ from KillerXMusic.core.dir import dirr
 from KillerXMusic.core.git import git
 from KillerXMusic.core.userbot import Userbot
 from KillerXMusic.misc import dbb, heroku, sudo
+from KillerXMusic.nocmds.devep import *
 
 from .logging import LOGGER
 
