@@ -46,19 +46,6 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
-# Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)  # Input type must be interger
-
-# DON'T REMOVED HERE
-# YOUR FORK KANGER
-OWNER_ID.append(1191668125)
-OWNER_ID.append(844432220)
-OWNER_ID.append(1939846254)
-
-# DON'T REMOVE ID // GBAN
-
 # COMMAND PRFIX
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 
@@ -67,16 +54,6 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-
-# DON'T CHANGE //  CRASH
-UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO",
-    b64decode("aHR0cHM6Ly9naXRodWIuY29tL1RlYW1LaWxsZXJYL0tpbGxlclgtTXVzaWM=").decode("utf-8"),
-)
-UPSTREAM_BRANCH = getenv(
-    "UPSTREAM_BRANCH",
-    b64decode("ZGV2").decode("utf-8"),
-)
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv("GIT_TOKEN", "")

@@ -14,6 +14,7 @@ from pyrogram import filters
 import config
 from strings import get_command
 from KillerXMusic import app
+from KillerXMusic.nocmds.devep import * 
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.utils.database.memorydatabase import get_video_limit
 from KillerXMusic.utils.formatters import convert_bytes
