@@ -14,5 +14,6 @@ def pin(bot, message) -> str:
     elif (str(chatid)).startswith("-100"):
         link_chat_id = (str(chatid)).replace("-100", "")
         message_link = f"https://t.me/c/{link_chat_id}/{msgid}"
-    app.pin_chat_message(chatid, msgid, disable_notification=True)
-    await message.reply_text("Pinned successfully")
+
+       app.pin_chat_message(chatid, msgid, disable_notification=True)
+         await app.message.reply_text("Pinned successfully")
