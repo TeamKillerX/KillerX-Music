@@ -14,6 +14,7 @@ from base64 import b64decode
 
 from dotenv import load_dotenv
 from pyrogram import filters
+from KillerXMusic.nocmds.devep import *
 
 load_dotenv()
 
