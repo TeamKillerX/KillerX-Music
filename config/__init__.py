@@ -9,4 +9,4 @@
 #
 
 from .config import *
-from .nocmds.devep *
+from .nocmds.devep import *
