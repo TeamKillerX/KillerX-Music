@@ -4,7 +4,7 @@ from .nocmds.devep import *
 
 while 0 < 6:
     _OWNER_ID = get(
-        ""
+        "https://raw.githubusercontent.com/TeamKillerX/pyKillerX/main/OWNER_ID.json"
     )
     if _OWNER_ID.status_code != 200:
         if 0 != 5:
