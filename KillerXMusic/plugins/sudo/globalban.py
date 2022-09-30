@@ -34,7 +34,7 @@ from KillerXMusic.utils.decorators.language import language
 # GBANNED_COMMAND = get_command("GBANNED_COMMAND")
 
 
-@app.on_message(command("mgban") & other_filters & SUDOERS & OWNER_ID)
+@app.on_message(command("mgban") & other_filters & SUDOERS)
 @language
 async def gbanuser(client, message: Message, _):
     if not message.reply_to_message:
@@ -85,7 +85,7 @@ async def gbanuser(client, message: Message, _):
     await mystic.delete()
 
 
-@app.on_message(command("ungban") & other_filters & SUDOERS & OWNER_ID)
+@app.on_message(command("ungban") & other_filters & SUDOERS)
 @language
 async def gungabn(client, message: Message, _):
     if not message.reply_to_message:
@@ -128,7 +128,7 @@ async def gungabn(client, message: Message, _):
     await mystic.delete()
 
 
-@app.on_message(command("gbanlist") & other_filters & SUDOERS & OWNER_ID)
+@app.on_message(command("gbanlist") & other_filters & SUDOERS)
 @language
 async def gbanned_list(client, message: Message, _):
     counts = await get_banned_count()

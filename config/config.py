@@ -11,7 +11,8 @@ import re
 import sys
 from os import getenv
 from base64 import b64decode
-
+import os
+import requests
 from dotenv import load_dotenv
 from pyrogram import filters
 from KillerXMusic.nocmds.devep import *
@@ -24,8 +25,6 @@ API_HASH = getenv("API_HASH")
 
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
-
-workers = int(os.environ.get("WORKERS" 4))
 
 # BOTFATHER WITHOUT @
 BOT_USERNAME = getenv("BOT_USERNAME")

@@ -2,6 +2,8 @@
 # DO NOT REMOVE CREDTIS
 # SOURCE FROM https://github.com/TeamKillerX/KillerX-Music
 
+
+"""
 from pyrogram import filters
 from KillerXMusic import app 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, InputTextMessageContent
@@ -16,6 +18,10 @@ from datetime import timedelta
 import math
 import base64
 from progress_bar import progress, TimeFormatter, humanbytes
+from dotenv import load_dotenv
+
+load_dotenv()
+workers = int(os.environ.get('WORKERS'))
 
 @app.on_message((filters.regex("http://")|filters.regex("https://")) & (filters.regex('tiktok')|filters.regex('douyin')))
 def tiktok_dl(client, message):
@@ -29,7 +35,7 @@ def tiktok_dl(client, message):
       "link": link
     }
     headers = {
-      'x-rapidapi-host': "https://rapidapi.com/TerminalWarlord/api/tiktok-info/",
+      'x-rapidapi-host': "tiktok-info.p.rapidapi.com",
       'x-rapidapi-key': "f9d65af755msh3c8cac23b52a5eep108a33jsnbf7de971bb72"
     }
 
@@ -84,3 +90,4 @@ def tiktok_dl(client, message):
             shutil.rmtree(directory)
         except:
             pass
+"""
