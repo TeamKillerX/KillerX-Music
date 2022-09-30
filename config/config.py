@@ -11,7 +11,8 @@ import re
 import sys
 from os import getenv
 from base64 import b64decode
-
+import os
+import requests
 from dotenv import load_dotenv
 from pyrogram import filters
 from KillerXMusic.nocmds.devep import *
