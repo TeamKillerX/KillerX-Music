@@ -2,6 +2,8 @@
 # DO NOT REMOVE CREDTIS
 # SOURCE FROM https://github.com/TeamKillerX/KillerX-Music
 
+
+"""
 from pyrogram import filters
 from KillerXMusic import app 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, InputTextMessageContent
@@ -88,3 +90,4 @@ def tiktok_dl(client, message):
             shutil.rmtree(directory)
         except:
             pass
+"""
