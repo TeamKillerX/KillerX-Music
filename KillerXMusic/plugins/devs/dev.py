@@ -25,6 +25,8 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
 from KillerXMusic import app
+from KillerXMusic import userbot as ass
+from KillerXMusic import userbot
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.nocmds.prefix import command, other_filters
 
