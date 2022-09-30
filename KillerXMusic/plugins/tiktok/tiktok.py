@@ -33,7 +33,7 @@ def tiktok_dl(client, message):
       'x-rapidapi-key': "f9d65af755msh3c8cac23b52a5eep108a33jsnbf7de971bb72"
     }
 
-    api = f"https://tiktok-info.p.rapidapi.com/dl/"
+    api = f"https://rapidapi.com/TerminalWarlord/api/tiktok-info/"
     r = requests.get(api, params=params, headers=headers).json()['videoLinks']['download']
     directory = str(round(time.time()))
     filename = str(int(time.time()))+'.mp4'
