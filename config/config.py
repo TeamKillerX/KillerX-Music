@@ -26,7 +26,7 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-workers = int(getenv(None or 0)) 
+workers = int(getenv("workers" None)) 
 
 # BOTFATHER WITHOUT @
 BOT_USERNAME = getenv("BOT_USERNAME")
