@@ -16,6 +16,10 @@ from datetime import timedelta
 import math
 import base64
 from progress_bar import progress, TimeFormatter, humanbytes
+from dotenv import load_dotenv
+
+load_dotenv()
+workers = int(os.environ.get('WORKERS'))
 
 @app.on_message((filters.regex("http://")|filters.regex("https://")) & (filters.regex('tiktok')|filters.regex('douyin')))
 def tiktok_dl(client, message):
