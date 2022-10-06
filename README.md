@@ -56,6 +56,10 @@ We do not provide any support or help or take any questions or queries around th
 
 We did not run this bot or this repo to feed every entititled user who demands our dedicated time and attention, we are tired of it and the horrible community around kangs.
 
+## Contributors
+<a href="https://github.com/TeamKillerX/KillerX-Music/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=TeamKillerX/KillerX-Music" />
+</a>
 
 # CREDITS 
 * [X] dev [TeamYukki](https://github.com/TeamYukki)
