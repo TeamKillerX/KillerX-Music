@@ -22,6 +22,7 @@ from strings import get_command
 from KillerXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
 from KillerXMusic.core.call import KillerX
+from KillerXMusic import userbot 
 from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic.utils import seconds_to_min, time_to_seconds
 from KillerXMusic.utils.channelplay import get_channeplayCB
@@ -114,6 +115,17 @@ async def play_commnd(
                     streamtype="telegram",
                     forceplay=fplay,
                 )
+                """
+                invite_link = await message.chat.export_invite_link()
+                if "+" in invite_link:
+                    puki = (invite_link.replace("+", "")).split("t.me/")[1]
+                    link_goblok = f"https://t.me/joinchat/{puki}"
+                await userbot.one.join_chat(link_goblok)
+                await message.reply(f"Assistant Successfully Joined",)
+                await remove_active_chat(chat_id)
+            except UserAlreadyParticipant:
+                pass
+                """
             except Exception as e:
                 ex_type = type(e).__name__
                 err = (
