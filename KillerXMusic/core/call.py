@@ -242,18 +242,17 @@ class Call(PyTgCalls):
                     m = await app.send_message(
                         original_chat_id, _["call_5"]
                     )
-                    if invitelink.startswith("https://t.me/+"):
-                        invitelink = invitelink.replace(
-                            "https://t.me/+", "https://t.me/joinchat/"
-                        )
-                    await asyncio.sleep(3)
-                    await userbot.join_chat(invitelink)
-                    await asyncio.sleep(4)
-                    await m.edit(_["call_6"].format(userbot.name))
-                except UserAlreadyParticipant:
-                    pass
-                except Exception as e:
-                    raise AssistantErr(_["call_3"].format(e))
+                    invite_link = await message.chat.export_invite_link()
+                    if "+" in invite_link:
+                        kontol = (invite_link.replace("+", "")).split("t.me/")[1]
+                        link_bokep = f"https://t.me/joinchat/{kontol}"
+                    await userbot.join_chat(link_bokep)
+                    await message.reply(f"Assistant Successfully Joined",)
+                    await remove_active_chat(chat_id)
+                  except UserAlreadyParticipant:
+                     pass
+                  except Exception as e:
+                     raise AssistantErr(_["call_3"].format(e))
 
     async def join_call(
         self,
