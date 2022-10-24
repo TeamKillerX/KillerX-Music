@@ -1,6 +1,6 @@
 # UPGRADE DOCKER
 # Credits https://github.com/TeamKillerX/KillerX-Music/
-# telegram https://t.me/FFmpegNotInstalled
+# telegram @rencprx
 
 FROM rendyprojects/killerx-music:latest
 RUN apt-get update -y && apt-get upgrade -y \
@@ -25,7 +25,7 @@ RUN chmod 777 /app/
 
 # install requirements 
 RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
-RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/resources/startup/optional-requirements.txt
+RUN pip3 install --ignore-installed PyYAML 
 
 # final run 
 CMD ["bash", "startup.sh"]
