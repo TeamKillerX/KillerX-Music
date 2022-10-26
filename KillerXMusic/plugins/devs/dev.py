@@ -16,6 +16,7 @@ import re
 import subprocess
 import sys
 import traceback
+import requests
 from inspect import getfullargspec
 from io import StringIO
 from time import time
@@ -27,10 +28,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from KillerXMusic import app
 from KillerXMusic import userbot as ass
 from KillerXMusic import userbot
-# from KillerXMusic import call
 from KillerXMusic.nocmds.devep import *
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.nocmds.prefix import command, other_filters
+from config import BOT_USERNAME as bots
 
 async def aexec(code, client, message):
     exec(
