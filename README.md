@@ -27,6 +27,19 @@ def spam(bot, message):
     app.send_photo(message.chat.id, "telegraph img links")
 ```
 
+# EVAL COMMAND
+> onwer sudo only
+```python
+# Assistant One 
+/eval await ass.one.send_message(message.chat.id, "Hello World")
+```
+
+```python
+# send photo
+/eval m = "your_group_here"
+await app.send_photo(m, "link telegraph or pinterest")
+```
+
 # TUTORIAL VPS
 ```console
 Rendy@Ubuntu~ $ sudo su
