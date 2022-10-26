@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by saitamamod@Github, < https://github.com/saitamamod >.
+# Copyright (C) 2021-2022 by TeamKillerX@Github, < https://github.com/TeamKillerX >.
 #
-# This file is part of < https://github.com/saitamamod/KillerXMusicBot > project,
+# This file is part of < https://github.com/TeamKillerX/KillerX-Music > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/saitamamod/KillerXMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamKillerX/KillerX-Music/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -57,7 +57,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("CodeDev_Support")
+                await self.one.join_chat("KillerXSupport")
                 await self.one.join_chat("rendyprojects")
                 await self.one.join_chat("pantekyks")
             except:
@@ -88,7 +88,7 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("CodeDev_Support")
+                await self.two.join_chat("KillerXSupport")
                 await self.two.join_chat("rendyprojects")
                 await self.two.join_chat("pantekyks")
             except:
@@ -119,7 +119,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("CodeDev_Support")
+                await self.three.join_chat("KillerXSupport")
                 await self.three.join_chat("rendyprojects")
                 await self.three.join_chat("pantekyks")
             except:
@@ -150,7 +150,7 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("CodeDev_Support")
+                await self.four.join_chat("KillerXSupport")
                 await self.four.join_chat("rendyprojects")
                 await self.four.join_chat("pantekyks")
             except:
@@ -181,7 +181,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("CodeDev_Support")
+                await self.five.join_chat("KillerXSupport")
                 await self.five.join_chat("rendyprojects")
                 await self.five.join_chat("pantekyks")
             except:
