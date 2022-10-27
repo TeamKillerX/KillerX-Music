@@ -3,7 +3,9 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import GITHUB_REPO
+from config import SUPPORT_CHANNEL as why
+from config import SUPPORT_GROUP as you
 from KillerXMusic import app
 
 
@@ -19,31 +21,31 @@ def start_pannel(_):
             ),
         ],
     ]
-    if SUPPORT_CHANNEL and SUPPORT_GROUP:
+    if why and you:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                    text=_["S_B_4"], url=f"{why}"
                 ),
                 InlineKeyboardButton(
-                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                    text=_["S_B_3"], url=f"{you}"
                 ),
             ]
         )
     else:
-        if SUPPORT_CHANNEL:
+        if why:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                        text=_["S_B_4"], url=f"{why}"
                     )
                 ]
             )
-        if SUPPORT_GROUP:
+        if you:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                        text=_["S_B_3"], url=f"{you}"
                     )
                 ]
             )
@@ -58,31 +60,31 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ]
     ]
-    if SUPPORT_CHANNEL and SUPPORT_GROUP:
+    if why and you:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                    text=_["S_B_4"], url=f"{why}"
                 ),
                 InlineKeyboardButton(
-                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                    text=_["S_B_3"], url=f"{you}"
                 ),
             ]
         )
     else:
-        if SUPPORT_CHANNEL:
+        if why:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                        text=_["S_B_4"], url=f"{why}"
                     )
                 ]
             )
-        if SUPPORT_GROUP:
+        if you:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                        text=_["S_B_3"], url=f"{you}"
                     )
                 ]
             )
