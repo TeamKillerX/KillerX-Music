@@ -4,7 +4,7 @@
 ![Forks](https://img.shields.io/github/forks/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Stars](https://img.shields.io/github/stars/Randi356/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Contributors](https://img.shields.io/github/contributors/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
-![Repository Size](https://img.shields.io/github/repo-size/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)</br>
+![Repository Size](https://img.shields.io/github/repo-size/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
 [![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/killerx-music)](https://hub.docker.com/r/rendyprojects/killerx-music/tags)
 
 ![back](https://user-images.githubusercontent.com/90479255/178405323-34f4af0b-5c1e-4822-b0d6-eb578e30ff54.png)
