@@ -1,4 +1,4 @@
-# KILLERX MUSIC
+# KillerX Music
 ![Python Version](https://img.shields.io/badge/python-3.9-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
 ![Forks](https://img.shields.io/github/forks/TeamKillerX/KillerX-Music?style=for-the-badge&logo=appveyor)
@@ -17,7 +17,7 @@
    Never ever abuse this repository
 ```
 
-# COMMAND PREFIX
+# Command Prefix
 ```python
 from KillerXMusic.nocmds.prefix import command, other_filters
 from KillerXMusic import app
@@ -27,7 +27,7 @@ def spam(bot, message):
     app.send_photo(message.chat.id, "telegraph img links")
 ```
 
-# EVAL COMMAND
+# Eval Comannd
 > onwer sudo only
 ```python
 # Assistant One 
@@ -40,7 +40,7 @@ def spam(bot, message):
 await app.send_photo(m, "link telegraph or pinterest")
 ```
 
-# TUTORIAL VPS
+# Tutorial Vps
 ```console
 Rendy@Ubuntu~ $ sudo su
 Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get upgrade -y
@@ -59,7 +59,7 @@ Rendy@Ubuntu~ $ pip3 install -r req*
 Rendy@Ubuntu~ $ bash start
 ```
 
-## WATCH ON YOUTUBE
+## Watch On Youtube
 > * Please click image
 
 [![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
