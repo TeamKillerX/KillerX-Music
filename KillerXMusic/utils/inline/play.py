@@ -10,7 +10,7 @@
 import random
 
 from pyrogram.types import InlineKeyboardButton
-from config import SUPPORT_CHANNEL
+from config import SUPPORT_CHANNEL as who
 
 selections = [
     "▮▮▮▮▮▮▮▮",
@@ -45,7 +45,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+                text=_["S_B_10"], url=f"{who}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -72,7 +72,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+                text=_["S_B_10"], url=f"{who}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -95,7 +95,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+                text=_["S_B_10"], url=f"{who}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -115,7 +115,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_10"], url=f"{SUPPORT_CHANNEL}",
+                text=_["S_B_10"], url=f"{who}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
