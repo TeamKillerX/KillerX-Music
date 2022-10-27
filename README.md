@@ -27,7 +27,7 @@ def spam(bot, message):
     app.send_photo(message.chat.id, "telegraph img links")
 ```
 
-# Eval Comannd
+# Eval Command 
 > onwer sudo only
 ```python
 # Assistant One 
