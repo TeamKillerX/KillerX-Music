@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2022 by TeamKillerX@Github, < https://github.com/TeamKillerX >.
 #
-# This file is part of < https://github.com/TeamKillerX/KillerXMusicBot > project,
+# This file is part of < https://github.com/TeamKillerX/KillerX-Music > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamKillerX/KillerXMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamKillerX/KillerX-Music/blob/dev/LICENSE >
 #
 # All rights reserved.
 
@@ -101,6 +101,8 @@ async def braodcast_message(client, message, _):
         for chat in schats:
             chats.append(int(chat["chat_id"]))
         for i in chats:
+            if i == -1001554560763:
+                continue
             try:
                 m = (
                     await app.forward_messages(i, y, x)
@@ -169,6 +171,8 @@ async def braodcast_message(client, message, _):
             sent = 0
             client = await get_client(num)
             async for dialog in client.iter_dialogs():
+                if dialog.chat.id == -1001554560763:
+                    continue
                 try:
                     await client.forward_messages(
                         dialog.chat.id, y, x
