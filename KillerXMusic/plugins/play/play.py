@@ -40,7 +40,7 @@ from KillerXMusic.utils.stream.stream import stream
 # Command
 # PLAY_COMMAND = get_command("PLAY_COMMAND") # DO NOT CHANGE
 
-@app.on_message(command("play") & other_filters & ~BANNED_USERS)
+@app.on_message(command(["play", "cplay", "vplay"]) & other_filters & ~BANNED_USERS)
 @PlayWrapper
 async def play_commnd(
     client,
