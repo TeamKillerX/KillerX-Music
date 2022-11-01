@@ -18,13 +18,8 @@ RUN mkdir /root/TeamKillerX/bin/
 WORKDIR /root/TeamKillerX/
 RUN chmod +x /usr/local/bin/*
 
-# YNTKTS LMAO :) 
-COPY . /app/
-WORKDIR /app/
-RUN chmod 777 /app/
-
 # install requirements 
-RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TeamKillerX/KillerX-Music/dev/requirements.txt
+RUN pip3 install -r requirements.txt
 RUN pip3 install --ignore-installed PyYAML 
 
 # final run 
