@@ -23,4 +23,4 @@ RUN pip3 install -r requirements.txt
 RUN pip3 install --ignore-installed PyYAML 
 
 # final run 
-CMD ["bash", "startup.sh"]
+CMD ["bash", "start"]
