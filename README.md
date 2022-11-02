@@ -56,7 +56,7 @@ Rendy@Ubuntu~ $ nano .env
 # [ ctrl s + ctrl x ] # done
 Rendy@Ubuntu~ $ screen -S killerx
 Rendy@Ubuntu~ $ pip3 install -r req*
-Rendy@Ubuntu~ $ bash start
+Rendy@Ubuntu~ $ python3 -m KillerXMusic 
 ```
 
 ## Watch On Youtube
