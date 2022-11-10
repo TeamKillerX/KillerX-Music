@@ -17,9 +17,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-          buildpack: "heroku/python"
-          buildpack: "https://github.com/heroku/heroku-buildpack-nodejs"
-          buildpack: "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           branch: "dev"
           stack: "container"
           env_file: ".env"
