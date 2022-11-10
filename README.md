@@ -40,6 +40,21 @@ def spam(bot, message):
 await app.send_photo(m, "link telegraph or pinterest")
 ```
 
+# Add Secrets env
+```
+API_ID
+API_HASH
+BOT_TOKEN
+LOG_GROUP_ID
+OWNER_ID
+MONGO_DB_URI
+MUSIC_BOT_NAME
+STRING_SESSION
+HEROKU_API_KEY
+HEROKU_APP_NAME
+HEROKU_EMAIL
+```
+
 # Tutorial Vps
 ```console
 Rendy@Ubuntu~ $ sudo su
