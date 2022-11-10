@@ -1,0 +1,36 @@
+# credits @xtsea
+
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          buildpack: "heroku/python"
+          buildpack: "https://github.com/heroku/heroku-buildpack-nodejs"
+          buildpack: "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          branch: "dev"
+          stack: "container"
+          env_file: ".env"
+        env:
+          API_ID: ${{secrets.API_ID}}
+          API_HASH: ${{secrets.API_HASH}}
+          BOT_TOKEN: ${{secrets.BOT_TOKEN}}
+          LOG_GROUP_ID: ${{secrets.LOG_GROUP_ID}}
+          OWNER_ID: ${{secrets.OWNER_ID}}
+          MONGO_DB_URI: ${{secrets.MONGO_DB_URI}}
+          MUSIC_BOT_NAME: ${{secrets.MUSIC_BOT_MAME}}
+          STRING_SESSION: ${{secrets.STRING_SESSION}}
+
+          procfile: "worker: python3 -m KillerXMusic"
