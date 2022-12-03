@@ -15,10 +15,9 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
-# DON'T CHANGE //  CRASH
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    b64decode("aHR0cHM6Ly9naXRodWIuY29tL1RlYW1LaWxsZXJYL0tpbGxlclgtTXVzaWM=").decode("utf-8"),
+    "randydev.my.id",
 )
 UPSTREAM_BRANCH = getenv(
     "UPSTREAM_BRANCH",
