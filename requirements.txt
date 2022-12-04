@@ -22,6 +22,6 @@ tgcrypto
 wget
 youtube-search
 youtube-search-python
-pytgcalls==0.8.6
+py-tgcalls==0.8.6
 git+https://github.com/Randi356/yt-dlp
 git+https://github.com/TeamKillerX/speedtest-cli
