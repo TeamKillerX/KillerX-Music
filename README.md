@@ -63,9 +63,11 @@ Rendy@Ubuntu~ $ sudo apt-get install nano -y
 Rendy@Ubuntu~ $ sudo apt-get install screen -y
 Rendy@Ubuntu~ $ sudo apt-get install docker.io -y
 Rendy@Ubuntu~ $ sudo apt-get install python -y && sudo apt-get install python3-pip ffmpeg -y
-Rendy@Ubuntu~ $ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
 Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/KillerX-Music
 Rendy@Ubuntu~ $ cd KillerX-Music
+Rendy@Ubuntu~ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+Rendy@Ubuntu~ $ source ~/.bashrc
+Rendy@Ubuntu~ $ nvm install v18
 Rendy@Ubuntu~ $ cp sample.env .env
 Rendy@Ubuntu~ $ nano .env
 # [ ctrl s + ctrl x ] # done
