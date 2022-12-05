@@ -9,7 +9,7 @@ gitpython
 hachoir
 heroku3
 lyricsgenius
-motor==3.0.0
+motor
 pillow
 psutil
 pykeyboard
