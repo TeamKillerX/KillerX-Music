@@ -76,11 +76,6 @@ Rendy@Ubuntu~ $ pip3 install -r req*
 Rendy@Ubuntu~ $ python3 -m KillerXMusic 
 ```
 
-## Watch On Youtube
-> * Please click image
-
-[![YOUTUBE](https://www.google.com/url?q=https://3.bp.blogspot.com/-3QAmTyWieAI/XUTXWqXLVTI/AAAAAAAAAoA/150stBpxf1cFMJuUWFW7nfvxBTPZMmzQgCLcBGAs/s1600/neofetch%252Bon%252Bubuntu.webp&sa=U&ved=0ahUKEwiK9IeSg534AhVo8XMBHRhGBVwQ5hMIBQ&usg=AOvVaw3ymVAx_CtpX1PQd2SsEBlt)](http://www.youtube.com/watch?v=WK-iETytZGk&feature=youtu.be "Deploy KillerX Music On Vps")
-
 ## Support and Help:
 We do not provide any support or help or take any questions or queries around this repo, if you want to deploy it you are on your own, learn to read or ask in some python dev group or stalkoverflow, the internet is your learning ground - but do NOT come our support group asking any help around the code or the repo, you will get immediately banned and just cussed at. 
 
