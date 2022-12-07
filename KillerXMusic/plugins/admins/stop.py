@@ -16,15 +16,15 @@ from KillerXMusic import app
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.utils.database import set_loop
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-STOP_COMMAND = get_command("STOP_COMMAND")
+# STOP_COMMAND = get_command("STOP_COMMAND")
 
 
 @app.on_message(
-    filters.command(STOP_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["stop", "end", "cstop", "cend"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck
