@@ -17,15 +17,15 @@ from strings import get_command
 from KillerXMusic import app
 from KillerXMusic.misc import db
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
+# SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
 
 
 @app.on_message(
-    filters.command(SHUFFLE_COMMAND)
-    & filters.group
-    & ~filters.edited
+    filters.command(["shuffle", "cshuffle"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck
