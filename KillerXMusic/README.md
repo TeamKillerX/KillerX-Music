@@ -5,5 +5,5 @@ from KillerXMusic import app
 
 @app.on_message(command("example") & other_filters)
 def spam(bot, message):
-    app.send_photo(message.chat.id, "telegraph img links")
+    bot.send_photo(message.chat.id, "telegraph img links")
 ```
