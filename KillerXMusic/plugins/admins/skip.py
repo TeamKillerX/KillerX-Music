@@ -22,15 +22,15 @@ from KillerXMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from KillerXMusic.utils.stream.autoclear import auto_clean
 from KillerXMusic.utils.thumbnails import gen_thumb
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-SKIP_COMMAND = get_command("SKIP_COMMAND")
+# SKIP_COMMAND = get_command("SKIP_COMMAND")
 
 
 @app.on_message(
-    filters.command(SKIP_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["skip", "cskip"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck
