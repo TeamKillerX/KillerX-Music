@@ -16,15 +16,15 @@ from KillerXMusic import app
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.utils.database import is_muted, mute_off
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-UNMUTE_COMMAND = get_command("UNMUTE_COMMAND")
+# UNMUTE_COMMAND = get_command("UNMUTE_COMMAND")
 
 
 @app.on_message(
-    filters.command(UNMUTE_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["unmute", "cunmute"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck

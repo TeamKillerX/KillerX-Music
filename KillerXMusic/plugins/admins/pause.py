@@ -16,15 +16,15 @@ from KillerXMusic import app
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.utils.database import is_music_playing, music_off
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-PAUSE_COMMAND = get_command("PAUSE_COMMAND")
+# PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
 @app.on_message(
-    filters.command(PAUSE_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["pause", "cpause"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck

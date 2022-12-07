@@ -16,15 +16,15 @@ from KillerXMusic import app
 from KillerXMusic.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-LOOP_COMMAND = get_command("LOOP_COMMAND")
+# LOOP_COMMAND = get_command("LOOP_COMMAND")
 
 
 @app.on_message(
-    filters.command(LOOP_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["loop", "cloop"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck

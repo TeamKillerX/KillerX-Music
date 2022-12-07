@@ -16,15 +16,15 @@ from KillerXMusic import YouTube, app
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.misc import db
 from KillerXMusic.utils import AdminRightsCheck, seconds_to_min
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-SEEK_COMMAND = get_command("SEEK_COMMAND")
+# SEEK_COMMAND = get_command("SEEK_COMMAND")
 
 
 @app.on_message(
-    filters.command(SEEK_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["seek", "cseek", "seekback", "cseekback"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck

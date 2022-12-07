@@ -16,15 +16,15 @@ from KillerXMusic import app
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.utils.database import is_music_playing, music_on
 from KillerXMusic.utils.decorators import AdminRightsCheck
+from KillerXMusic.nocmds.prefix import command, other_filters
 
 # Commands
-RESUME_COMMAND = get_command("RESUME_COMMAND")
+# RESUME_COMMAND = get_command("RESUME_COMMAND")
 
 
 @app.on_message(
-    filters.command(RESUME_COMMAND)
-    & filters.group
-    & ~filters.edited
+    command(["resume", "cresume"])
+    & other_filters
     & ~BANNED_USERS
 )
 @AdminRightsCheck

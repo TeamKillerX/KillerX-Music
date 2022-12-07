@@ -1,5 +1,5 @@
 # credit @TeamKillerX
-# by @FFmpegNotInstalled
+# by @xtsea
 
 import asyncio
 import importlib
@@ -14,9 +14,6 @@ from KillerXMusic import LOGGER, app, userbot
 from KillerXMusic.core.call import KillerX
 from KillerXMusic.plugins import ALL_MODULES
 from KillerXMusic.utils.database import get_banned_users, get_gbanned
-
-loop = asyncio.get_event_loop()
-
 
 async def init():
     if (
@@ -71,5 +68,6 @@ async def init():
 
 
 if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
     loop.run_until_complete(init())
     LOGGER("KillerXMusic").info("Stopping KillerX Music Bot! GoodBye")
