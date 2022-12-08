@@ -2,14 +2,13 @@
 # Credits https://github.com/TeamKillerX/KillerX-Music/
 # telegram @rencprx
 
-FROM rendyprojects/killerx-music:latest
+FROM rendyprojects/killerx-music:dev
 RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends ffmpeg
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get install -y nodejs
+RUN npm i -g npm
 COPY . /app/
 WORKDIR /app/
-RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-
-CMD ["bash", "start"]
+RUN pip3 install -U -r requirements.txt
+CMD bash start
