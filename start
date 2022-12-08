@@ -12,4 +12,4 @@ echo "
       Visit @RendyProjects for updates!!
 
 "
-python3 -m KillerXMusic
+docker run --privileged --env-file .env --rm -i rendyprojects/killerx-music:dev 
