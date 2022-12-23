@@ -1,0 +1,8 @@
+flask
+gunicorn
+aiofiles
+humanize
+httpx
+motor==3.0.0
+reportlab
+svglib
