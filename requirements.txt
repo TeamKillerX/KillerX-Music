@@ -13,7 +13,7 @@ motor
 pymongo[srv]
 pillow
 psutil
-py-tgcalls==0.8.6
+py-tgcalls
 pykeyboard
 pyrogram
 python-dotenv
