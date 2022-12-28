@@ -40,12 +40,17 @@ class KillerXBot(Client):
                 "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
             )
             sys.exit()
+
+        """
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
                 "Please promote Bot as Admin in Logger Group"
             )
+
             sys.exit()
+         """
+
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
         else:
