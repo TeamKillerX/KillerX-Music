@@ -10,11 +10,13 @@
 import sys
 
 from pyrogram import Client
+from pyrogram import *
+from pyrogram.types import *
+from pyrogram.enums import ChatMemberStatus
 
 import config
 
 from ..logging import LOGGER
-
 
 class KillerXBot(Client):
     def __init__(self):
@@ -41,16 +43,13 @@ class KillerXBot(Client):
             )
             sys.exit()
 
-        """
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
-        if a.status != "administrator":
-            LOGGER(__name__).error(
-                "Please promote Bot as Admin in Logger Group"
+        if a.status == ChatMemberStatus.ADMINISTRATOR:
+           status = "Administrator"
+            LOGGER(__name__).error("Please promote Bot as Admin in Logger Group"
+
             )
-
             sys.exit()
-       """
-
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
         else:
