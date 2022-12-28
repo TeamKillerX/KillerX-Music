@@ -41,7 +41,6 @@ class KillerXBot(Client):
             )
             sys.exit()
 
-        """
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
@@ -49,7 +48,6 @@ class KillerXBot(Client):
             )
 
             sys.exit()
-         """
 
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
