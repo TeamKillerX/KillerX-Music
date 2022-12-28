@@ -15,7 +15,7 @@ pillow
 psutil
 py-tgcalls
 pykeyboard
-pyrogram
+pyrogram==2.0.70
 python-dotenv
 pyyaml
 rich
