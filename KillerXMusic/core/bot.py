@@ -45,7 +45,7 @@ class KillerXBot(Client):
 
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status == ChatMemberStatus.ADMINISTRATOR:
-           status = "Administrator"
+            status = "Administrator"
             LOGGER(__name__).error("Please promote Bot as Admin in Logger Group"
 
             )
