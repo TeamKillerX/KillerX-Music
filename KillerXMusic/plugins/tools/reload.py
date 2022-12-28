@@ -26,7 +26,7 @@ from KillerXMusic.utils.formatters import alpha_to_int
 # RELOAD_COMMAND = get_command("RELOAD_COMMAND")
 # RESTART_COMMAND = get_command("RESTART_COMMAND")
 
-
+"""
 @app.on_message(command("reload") & other_filters & ~BANNED_USERS)
 @language
 async def reload_admin_cache(client, message: Message, _):
@@ -49,6 +49,7 @@ async def reload_admin_cache(client, message: Message, _):
             "Failed to reload admincache. Make sure Bot is admin in your chat."
         )
 
+"""
 
 @app.on_message(command("restart") & other_filters & ~BANNED_USERS)
 @AdminActual
