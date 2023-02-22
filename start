@@ -1,15 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "
-            
-╭╮╭━╮╭╮╭╮╱╱╱╱╭━╮╭━┳━╮╭━╮
-┃┃┃╭╯┃┃┃┃╱╱╱╱╰╮╰╯╭┫┃╰╯┃┃
-┃╰╯╯╭┫┃┃┃╭━━┳━╋╮╭╯┃╭╮╭╮┣╮╭┳━━┳┳━━╮
-┃╭╮┃┣┫┃┃┃┃┃━┫╭╋╯╰╮┃┃┃┃┃┃┃┃┃━━╋┫╭━╯
-┃┃┃╰┫┃╰┫╰┫┃━┫┣╯╭╮╰┫┃┃┃┃┃╰╯┣━━┃┃╰━╮
-╰╯╰━┻┻━┻━┻━━┻┻━╯╰━┻╯╰╯╰┻━━┻━━┻┻━━╯
-
-      Visit @RendyProjects for updates!!
-
-"
-docker run --privileged --env-file .env --rm -i rendyprojects/killerx-music:dev 
+exec python3 -m KillerXMusic "$@"
