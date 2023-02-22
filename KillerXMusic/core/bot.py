@@ -12,7 +12,6 @@ import sys
 from pyrogram import Client
 from pyrogram import *
 from pyrogram.types import *
-from pyrogram.enums import ChatMemberStatus
 
 import config
 
