@@ -30,7 +30,7 @@ from KillerXMusic.nocmds.prefix import command, other_filters
 )
 @AdminRightsCheck
 async def admins(Client, message: Message, _, chat_id):
-    if not len(message.command) == 1:
+    if len(message.command) != 1:
         return await message.reply_text(_["general_2"])
     check = db.get(chat_id)
     if not check:

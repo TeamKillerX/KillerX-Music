@@ -25,72 +25,45 @@ def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
-            text="🏴󠁧󠁢󠁥󠁮󠁧󠁿 English",
-            callback_data=f"languages:en",
+            text="🏴󠁧󠁢󠁥󠁮󠁧󠁿 English", callback_data="languages:en"
         ),
+        InlineKeyboardButton(text="🇮🇳 हिन्दी", callback_data="languages:hi"),
+    )
+    keyboard.row(
+        InlineKeyboardButton(text="🇱🇰 සිංහල", callback_data="languages:si"),
         InlineKeyboardButton(
-            text="🇮🇳 हिन्दी",
-            callback_data=f"languages:hi",
+            text="🇦🇿 Azərbaycan", callback_data="languages:az"
+        ),
+    )
+    keyboard.row(
+        InlineKeyboardButton(text="🇮🇳 ગુજરાતી", callback_data="languages:gu"),
+        InlineKeyboardButton(
+            text="🇹🇷 Türkiye Türkçesi", callback_data="languages:tr"
         ),
     )
     keyboard.row(
         InlineKeyboardButton(
-            text="🇱🇰 සිංහල",
-            callback_data=f"languages:si",
+            text="🐶 Cheems", callback_data="languages:cheems"
         ),
         InlineKeyboardButton(
-            text="🇦🇿 Azərbaycan",
-            callback_data=f"languages:az",
+            text="🇮🇩 Indonesian", callback_data="languages:id"
         ),
     )
     keyboard.row(
+        InlineKeyboardButton(text="🇨🇴 Javenase", callback_data="languages:jw"),
         InlineKeyboardButton(
-            text="🇮🇳 ગુજરાતી",
-            callback_data=f"languages:gu",
-        ),
-        InlineKeyboardButton(
-            text="🇹🇷 Türkiye Türkçesi",
-            callback_data=f"languages:tr",
+            text="🇬🇱 Sundanese", callback_data="languages:su"
         ),
     )
     keyboard.row(
-        InlineKeyboardButton(
-            text="🐶 Cheems",
-            callback_data=f"languages:cheems",
-        ),
-        InlineKeyboardButton(
-            text="🇮🇩 Indonesian", 
-            callback_data=f"languages:id",
-        ),
+        InlineKeyboardButton(text="🇩🇪 Jerman", callback_data="languages:jer"),
+        InlineKeyboardButton(text="🇯🇵 Japan", callback_data="languages:jp"),
     )
     keyboard.row(
         InlineKeyboardButton(
-           text="🇨🇴 Javenase", 
-           callback_data=f"languages:jw",
-        ), 
-        InlineKeyboardButton(
-           text="🇬🇱 Sundanese",
-           callback_data=f"languages:su", 
+            text=_["BACK_BUTTON"], callback_data="settingsback_helper"
         ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-           text="🇩🇪 Jerman",
-           callback_data=f"languages:jer",
-        ),
-        InlineKeyboardButton(
-           text="🇯🇵 Japan",
-           callback_data=f"languages:jp",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
-            callback_data=f"settingsback_helper",
-        ),
-        InlineKeyboardButton(
-            text=_["CLOSE_BUTTON"], callback_data=f"close"
-        ),
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
     )
     return keyboard
 

@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def botplaylist_markup(_):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["PL_B_1"],
@@ -22,19 +22,15 @@ def botplaylist_markup(_):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text=_["PL_B_4"], callback_data="PM"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_6"], callback_data="LG"
-            ),
+            InlineKeyboardButton(text=_["PL_B_4"], callback_data="PM"),
+            InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG"),
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/VegetaSupports",
+                text=_["S_B_9"], url="https://t.me/VegetaSupports"
             ),
             InlineKeyboardButton(
-                text=_["S_B_10"], url=f"https://t.me/RendyProjects", 
+                text=_["S_B_10"], url="https://t.me/RendyProjects"
             ),
         ],
         [
@@ -43,11 +39,10 @@ def botplaylist_markup(_):
             ),
         ],
     ]
-    return buttons
 
 
 def top_play_markup(_):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["PL_B_9"], callback_data="SERVERTOP global"
@@ -72,11 +67,10 @@ def top_play_markup(_):
             ),
         ],
     ]
-    return buttons
 
 
 def get_playlist_markup(_):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["P_B_1"], callback_data="play_playlist a"
@@ -94,11 +88,10 @@ def get_playlist_markup(_):
             ),
         ],
     ]
-    return buttons
 
 
 def top_play_markup(_):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["PL_B_9"], callback_data="SERVERTOP Global"
@@ -123,11 +116,10 @@ def top_play_markup(_):
             ),
         ],
     ]
-    return buttons
 
 
 def failed_top_markup(_):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["BACK_BUTTON"],
@@ -138,11 +130,10 @@ def failed_top_markup(_):
             ),
         ],
     ]
-    return buttons
 
 
 def warning_markup(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -162,11 +153,10 @@ def warning_markup(_):
             ],
         ]
     )
-    return upl
 
 
 def close_markup(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -176,4 +166,3 @@ def close_markup(_):
             ]
         ]
     )
-    return upl
