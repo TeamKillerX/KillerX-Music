@@ -29,7 +29,7 @@ from KillerXMusic.nocmds.prefix import command, other_filters
 )
 @AdminRightsCheck
 async def stop_music(cli, message: Message, _, chat_id):
-    if not len(message.command) == 1:
+    if len(message.command) != 1:
         return await message.reply_text(_["general_2"])
     await KillerX.stop_stream(chat_id)
     await set_loop(chat_id, 0)

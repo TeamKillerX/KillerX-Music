@@ -71,9 +71,8 @@ def AdminRightsCheck(mystic):
                 admins = adminlist.get(message.chat.id)
                 if not admins:
                     return await message.reply_text(_["admin_18"])
-                else:
-                    if message.from_user.id not in admins:
-                        return await message.reply_text(_["admin_19"])
+                if message.from_user.id not in admins:
+                    return await message.reply_text(_["admin_19"])
         return await mystic(client, message, _, chat_id)
 
     return wrapper
